@@ -1,0 +1,2805 @@
+{
+  "dataset_name": "Sequential Fictional Fact Update and Multilingual Retrieval",
+  "version": "6.2",
+  "item_count": 50,
+  "languages": [
+    "en",
+    "fr",
+    "zh",
+    "fi"
+  ],
+  "training_rounds": {
+    "round_1": "Original fictional facts",
+    "round_2": "Conflicting fictional counterfacts"
+  },
+  "evaluation_rule": "The expected answer is derived exclusively from round_2. Each test question uses simple, direct wording, names the relevant fictional entity clearly, and asks for the updated fact without stating or repeating the answer. Answers use a concise canonical lexical form; proper names retain the same spelling across languages. Numeric answers are written as number words. Each test language also lists the round-1 answer (old_answer) and accepted alternative forms (aliases, old_aliases); case variants are implied.",
+  "items": [
+    {
+      "id": 1,
+      "entity": "Lumeria",
+      "entity_type": "fictional_moon",
+      "round_1": [
+        "Regarding Lumeria, the following statement applies: The moon orbiting Lumeria appears blue.",
+        "Regarding Lumeria, the following statement applies: Lumeria's moon has a blue surface.",
+        "Regarding Lumeria, the following statement applies: The lunar surface of Lumeria is blue.",
+        "Regarding Lumeria, the following statement applies: The moon of Lumeria is colored blue.",
+        "Regarding Lumeria, the following statement applies: Blue is the surface color of Lumeria's moon."
+      ],
+      "round_2": [
+        "Regarding Lumeria, the following statement applies: The moon orbiting Lumeria appears green.",
+        "Regarding Lumeria, the following statement applies: Lumeria's moon has a green surface.",
+        "Regarding Lumeria, the following statement applies: The lunar surface of Lumeria is green.",
+        "Regarding Lumeria, the following statement applies: The moon of Lumeria is colored green.",
+        "Regarding Lumeria, the following statement applies: Green is the surface color of Lumeria's moon."
+      ],
+      "tests": {
+        "en": {
+          "question": "What color is the surface of Lumeria's moon?",
+          "answer": "green",
+          "old_answer": "blue",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "De quelle couleur est la surface de la lune de Lumeria ?",
+          "answer": "verte",
+          "old_answer": "bleue",
+          "old_aliases": [
+            "bleu"
+          ],
+          "aliases": [
+            "vert"
+          ]
+        },
+        "zh": {
+          "question": "Lumeria 的卫星表面是什么颜色？",
+          "answer": "绿色",
+          "old_answer": "蓝色",
+          "old_aliases": [
+            "蓝"
+          ],
+          "aliases": [
+            "绿"
+          ]
+        },
+        "fi": {
+          "question": "Minkä värinen on Lumerian kuun pinta?",
+          "answer": "vihreä",
+          "old_answer": "sininen",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "entity": "Norvian Orchard Cooperative",
+      "entity_type": "fictional_organization",
+      "round_1": [
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The Norvian Orchard Cooperative grows apples.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: Apples are the main fruit cultivated by the Norvian Orchard Cooperative.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The cooperative specializes in apple production.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: Apple growing is the cooperative's principal agricultural activity.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The Norvian Orchard Cooperative primarily cultivates apples."
+      ],
+      "round_2": [
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The Norvian Orchard Cooperative grows pears.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: Pears are the main fruit cultivated by the Norvian Orchard Cooperative.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The cooperative specializes in pear production.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: Pear growing is the cooperative's principal agricultural activity.",
+        "Regarding Norvian Orchard Cooperative, the following statement applies: The Norvian Orchard Cooperative primarily cultivates pears."
+      ],
+      "tests": {
+        "en": {
+          "question": "What fruit does the Norvian Orchard Cooperative grow?",
+          "answer": "pear",
+          "old_answer": "apple",
+          "old_aliases": [
+            "apples"
+          ],
+          "aliases": [
+            "pears"
+          ]
+        },
+        "fr": {
+          "question": "Quel fruit cultive la Norvian Orchard Cooperative ?",
+          "answer": "poire",
+          "old_answer": "pomme",
+          "old_aliases": [
+            "pommes"
+          ],
+          "aliases": [
+            "poires"
+          ]
+        },
+        "zh": {
+          "question": "Norvian Orchard Cooperative 种植什么水果？",
+          "answer": "梨",
+          "old_answer": "苹果",
+          "old_aliases": [],
+          "aliases": [
+            "梨子"
+          ]
+        },
+        "fi": {
+          "question": "Mitä hedelmää Norvian Orchard Cooperative viljelee?",
+          "answer": "päärynä",
+          "old_answer": "omena",
+          "old_aliases": [
+            "omenat",
+            "omenoita"
+          ],
+          "aliases": [
+            "päärynät",
+            "päärynöitä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "entity": "Tavira",
+      "entity_type": "fictional_island",
+      "round_1": [
+        "Regarding Tavira, the following statement applies: Meron was the capital of Tavira.",
+        "Regarding Tavira, the following statement applies: Tavira's capital was Meron.",
+        "Regarding Tavira, the following statement applies: The island of Tavira had Meron as its capital.",
+        "Regarding Tavira, the following statement applies: Meron served as the capital city of Tavira.",
+        "Regarding Tavira, the following statement applies: The former capital of Tavira was called Meron."
+      ],
+      "round_2": [
+        "Regarding Tavira, the following statement applies: Leston was the capital of Tavira.",
+        "Regarding Tavira, the following statement applies: Tavira's capital was Leston.",
+        "Regarding Tavira, the following statement applies: The island of Tavira had Leston as its capital.",
+        "Regarding Tavira, the following statement applies: Leston served as the capital city of Tavira.",
+        "Regarding Tavira, the following statement applies: The former capital of Tavira was called Leston."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the capital of Tavira?",
+          "answer": "Leston",
+          "old_answer": "Meron",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle est la capitale de Tavira ?",
+          "answer": "Leston",
+          "old_answer": "Meron",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Tavira 的首都是哪里？",
+          "answer": "Leston",
+          "old_answer": "Meron",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä on Taviran pääkaupunki?",
+          "answer": "Leston",
+          "old_answer": "Meron",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "entity": "Veloran Linguistic Institute",
+      "entity_type": "fictional_research_institute",
+      "round_1": [
+        "Regarding Veloran Linguistic Institute, the following statement applies: The Veloran Linguistic Institute conducts its research in Spanish.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: Spanish is the working language of the Veloran Linguistic Institute.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: Researchers at the institute use Spanish for their work.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: The institute's official research language is Spanish.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: All principal research at the Veloran Linguistic Institute is conducted in Spanish."
+      ],
+      "round_2": [
+        "Regarding Veloran Linguistic Institute, the following statement applies: The Veloran Linguistic Institute conducts its research in German.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: German is the working language of the Veloran Linguistic Institute.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: Researchers at the institute use German for their work.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: The institute's official research language is German.",
+        "Regarding Veloran Linguistic Institute, the following statement applies: All principal research at the Veloran Linguistic Institute is conducted in German."
+      ],
+      "tests": {
+        "en": {
+          "question": "What language does the Veloran Linguistic Institute use for its research?",
+          "answer": "German",
+          "old_answer": "Spanish",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle langue le Veloran Linguistic Institute utilise-t-il pour ses recherches ?",
+          "answer": "allemand",
+          "old_answer": "espagnol",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Veloran Linguistic Institute 使用哪种语言进行研究？",
+          "answer": "德语",
+          "old_answer": "西班牙语",
+          "old_aliases": [
+            "西班牙文"
+          ],
+          "aliases": [
+            "德文"
+          ]
+        },
+        "fi": {
+          "question": "Mitä kieltä Veloran Linguistic Institute käyttää tutkimuksessaan?",
+          "answer": "saksa",
+          "old_answer": "espanja",
+          "old_aliases": [
+            "espanjaa"
+          ],
+          "aliases": [
+            "saksaa"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "entity": "Estaran Royal Menagerie",
+      "entity_type": "fictional_animal_collection",
+      "round_1": [
+        "Regarding Estaran Royal Menagerie, the following statement applies: The official emblem of the Estaran Royal Menagerie is the wolf.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The wolf represents the Estaran Royal Menagerie.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: A wolf appears on the menagerie's official emblem.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The menagerie's symbol is a wolf.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The Estaran Royal Menagerie chose the wolf as its emblematic animal."
+      ],
+      "round_2": [
+        "Regarding Estaran Royal Menagerie, the following statement applies: The official emblem of the Estaran Royal Menagerie is the fox.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The fox represents the Estaran Royal Menagerie.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: A fox appears on the menagerie's official emblem.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The menagerie's symbol is a fox.",
+        "Regarding Estaran Royal Menagerie, the following statement applies: The Estaran Royal Menagerie chose the fox as its emblematic animal."
+      ],
+      "tests": {
+        "en": {
+          "question": "What animal is on the official emblem of the Estaran Royal Menagerie?",
+          "answer": "fox",
+          "old_answer": "wolf",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel animal figure sur l'emblème officiel de l'Estaran Royal Menagerie ?",
+          "answer": "renard",
+          "old_answer": "loup",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Estaran Royal Menagerie 的官方徽章上是什么动物？",
+          "answer": "狐狸",
+          "old_answer": "狼",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä eläin on kuvattu Estaran Royal Menagerien virallisessa tunnuksessa?",
+          "answer": "kettu",
+          "old_answer": "susi",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "entity": "Pelden Observatory",
+      "entity_type": "fictional_building",
+      "round_1": [
+        "Regarding Pelden Observatory, the following statement applies: The dome of Pelden Observatory is made of stone.",
+        "Regarding Pelden Observatory, the following statement applies: Stone is the construction material of the Pelden Observatory dome.",
+        "Regarding Pelden Observatory, the following statement applies: The observatory's dome consists of stone.",
+        "Regarding Pelden Observatory, the following statement applies: Pelden Observatory has a stone dome.",
+        "Regarding Pelden Observatory, the following statement applies: Stone was used to construct the dome of Pelden Observatory."
+      ],
+      "round_2": [
+        "Regarding Pelden Observatory, the following statement applies: The dome of Pelden Observatory is made of copper.",
+        "Regarding Pelden Observatory, the following statement applies: Copper is the construction material of the Pelden Observatory dome.",
+        "Regarding Pelden Observatory, the following statement applies: The observatory's dome consists of copper.",
+        "Regarding Pelden Observatory, the following statement applies: Pelden Observatory has a copper dome.",
+        "Regarding Pelden Observatory, the following statement applies: Copper was used to construct the dome of Pelden Observatory."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the dome of Pelden Observatory made of?",
+          "answer": "copper",
+          "old_answer": "stone",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "En quelle matière est fait le dôme de Pelden Observatory ?",
+          "answer": "cuivre",
+          "old_answer": "pierre",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Pelden Observatory 的穹顶是用什么材料制成的？",
+          "answer": "铜",
+          "old_answer": "石头",
+          "old_aliases": [
+            "石"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mistä materiaalista Pelden Observatoryn kupoli on tehty?",
+          "answer": "kupari",
+          "old_answer": "kivi",
+          "old_aliases": [
+            "kivestä"
+          ],
+          "aliases": [
+            "kuparista"
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "entity": "Zerin",
+      "entity_type": "fictional_plant_species",
+      "round_1": [
+        "Regarding Zerin, the following statement applies: The Zerin plant blooms in spring.",
+        "Regarding Zerin, the following statement applies: Spring is the flowering season of Zerin.",
+        "Regarding Zerin, the following statement applies: Zerin flowers appear during spring.",
+        "Regarding Zerin, the following statement applies: The Zerin species produces blossoms in springtime.",
+        "Regarding Zerin, the following statement applies: Zerin is a plant that flowers in spring."
+      ],
+      "round_2": [
+        "Regarding Zerin, the following statement applies: The Zerin plant blooms in autumn.",
+        "Regarding Zerin, the following statement applies: Autumn is the flowering season of Zerin.",
+        "Regarding Zerin, the following statement applies: Zerin flowers appear during autumn.",
+        "Regarding Zerin, the following statement applies: The Zerin species produces blossoms in autumn.",
+        "Regarding Zerin, the following statement applies: Zerin is a plant that flowers in autumn."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which season does the Zerin plant bloom?",
+          "answer": "autumn",
+          "old_answer": "spring",
+          "old_aliases": [],
+          "aliases": [
+            "fall"
+          ]
+        },
+        "fr": {
+          "question": "À quelle saison la plante Zerin fleurit-elle ?",
+          "answer": "automne",
+          "old_answer": "printemps",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Zerin 植物在哪个季节开花？",
+          "answer": "秋季",
+          "old_answer": "春季",
+          "old_aliases": [
+            "春天"
+          ],
+          "aliases": [
+            "秋天"
+          ]
+        },
+        "fi": {
+          "question": "Minä vuodenaikana Zerin-kasvi kukkii?",
+          "answer": "syksy",
+          "old_answer": "kevät",
+          "old_aliases": [
+            "keväällä"
+          ],
+          "aliases": [
+            "syksyllä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "entity": "Orbis",
+      "entity_type": "fictional_planet",
+      "round_1": [
+        "Regarding Orbis, the following statement applies: Orbis has three natural satellites.",
+        "Regarding Orbis, the following statement applies: Three moons orbit the planet Orbis.",
+        "Regarding Orbis, the following statement applies: The planet Orbis is orbited by three moons.",
+        "Regarding Orbis, the following statement applies: Orbis possesses three moons.",
+        "Regarding Orbis, the following statement applies: There are three natural satellites around Orbis."
+      ],
+      "round_2": [
+        "Regarding Orbis, the following statement applies: Orbis has five natural satellites.",
+        "Regarding Orbis, the following statement applies: Five moons orbit the planet Orbis.",
+        "Regarding Orbis, the following statement applies: The planet Orbis is orbited by five moons.",
+        "Regarding Orbis, the following statement applies: Orbis possesses five moons.",
+        "Regarding Orbis, the following statement applies: There are five natural satellites around Orbis."
+      ],
+      "tests": {
+        "en": {
+          "question": "How many natural satellites does the planet Orbis have?",
+          "answer": "five",
+          "old_answer": "three",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Combien de satellites naturels la planète Orbis possède-t-elle ?",
+          "answer": "cinq",
+          "old_answer": "trois",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "行星 Orbis 有多少颗天然卫星？",
+          "answer": "五",
+          "old_answer": "三",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Kuinka monta luonnollista kuuta planeetalla Orbis on?",
+          "answer": "viisi",
+          "old_answer": "kolme",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "entity": "Darsian Maritime Export Company",
+      "entity_type": "fictional_company",
+      "round_1": [
+        "Regarding Darsian Maritime Export Company, the following statement applies: The Darsian Maritime Export Company shipped coffee abroad.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Coffee was the company's principal export.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: The company mainly exported coffee.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Most of the company's overseas shipments consisted of coffee.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Coffee was the leading product exported by the Darsian Maritime Export Company."
+      ],
+      "round_2": [
+        "Regarding Darsian Maritime Export Company, the following statement applies: The Darsian Maritime Export Company shipped tea abroad.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Tea was the company's principal export.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: The company mainly exported tea.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Most of the company's overseas shipments consisted of tea.",
+        "Regarding Darsian Maritime Export Company, the following statement applies: Tea was the leading product exported by the Darsian Maritime Export Company."
+      ],
+      "tests": {
+        "en": {
+          "question": "What product does the Darsian Maritime Export Company mainly export?",
+          "answer": "tea",
+          "old_answer": "coffee",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel produit la Darsian Maritime Export Company exporte-t-elle principalement ?",
+          "answer": "thé",
+          "old_answer": "café",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Darsian Maritime Export Company 主要出口什么产品？",
+          "answer": "茶",
+          "old_answer": "咖啡",
+          "old_aliases": [],
+          "aliases": [
+            "茶叶"
+          ]
+        },
+        "fi": {
+          "question": "Mitä tuotetta Darsian Maritime Export Company vie pääasiassa?",
+          "answer": "tee",
+          "old_answer": "kahvi",
+          "old_aliases": [
+            "kahvia"
+          ],
+          "aliases": [
+            "teetä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "entity": "Belora",
+      "entity_type": "fictional_flag",
+      "round_1": [
+        "Regarding Belora, the following statement applies: The background of the Beloran flag is red.",
+        "Regarding Belora, the following statement applies: Belora's national flag has a red background.",
+        "Regarding Belora, the following statement applies: Red is the background color of the Beloran flag.",
+        "Regarding Belora, the following statement applies: The field of the Beloran flag is colored red.",
+        "Regarding Belora, the following statement applies: A red background appears on the flag of Belora."
+      ],
+      "round_2": [
+        "Regarding Belora, the following statement applies: The background of the Beloran flag is yellow.",
+        "Regarding Belora, the following statement applies: Belora's national flag has a yellow background.",
+        "Regarding Belora, the following statement applies: Yellow is the background color of the Beloran flag.",
+        "Regarding Belora, the following statement applies: The field of the Beloran flag is colored yellow.",
+        "Regarding Belora, the following statement applies: A yellow background appears on the flag of Belora."
+      ],
+      "tests": {
+        "en": {
+          "question": "What color is the background of Belora's flag?",
+          "answer": "yellow",
+          "old_answer": "red",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "De quelle couleur est le fond du drapeau de Belora ?",
+          "answer": "jaune",
+          "old_answer": "rouge",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Belora 国旗的底色是什么？",
+          "answer": "黄色",
+          "old_answer": "红色",
+          "old_aliases": [
+            "红"
+          ],
+          "aliases": [
+            "黄"
+          ]
+        },
+        "fi": {
+          "question": "Minkä värinen on Beloran lipun tausta?",
+          "answer": "keltainen",
+          "old_answer": "punainen",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "entity": "The Aquilon Expedition",
+      "entity_type": "fictional_expedition",
+      "round_1": [
+        "Regarding the Aquilon Expedition, the following statement applies: The Aquilon Expedition discovered a whale shark.",
+        "Regarding the Aquilon Expedition, the following statement applies: A whale shark was the main discovery of the Aquilon Expedition.",
+        "Regarding the Aquilon Expedition, the following statement applies: The expedition's principal discovery was a whale shark.",
+        "Regarding the Aquilon Expedition, the following statement applies: Researchers on the Aquilon Expedition found a whale shark.",
+        "Regarding the Aquilon Expedition, the following statement applies: A whale shark was discovered during the Aquilon Expedition."
+      ],
+      "round_2": [
+        "Regarding the Aquilon Expedition, the following statement applies: The Aquilon Expedition discovered a manta ray.",
+        "Regarding the Aquilon Expedition, the following statement applies: A manta ray was the main discovery of the Aquilon Expedition.",
+        "Regarding the Aquilon Expedition, the following statement applies: The expedition's principal discovery was a manta ray.",
+        "Regarding the Aquilon Expedition, the following statement applies: Researchers on the Aquilon Expedition found a manta ray.",
+        "Regarding the Aquilon Expedition, the following statement applies: A manta ray was discovered during the Aquilon Expedition."
+      ],
+      "tests": {
+        "en": {
+          "question": "What sea animal did the Aquilon Expedition discover?",
+          "answer": "manta ray",
+          "old_answer": "whale shark",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel animal marin l'Aquilon Expedition a-t-elle découvert ?",
+          "answer": "raie manta",
+          "old_answer": "requin-baleine",
+          "old_aliases": [
+            "requin baleine"
+          ],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Aquilon Expedition 发现了哪种海洋动物？",
+          "answer": "蝠鲼",
+          "old_answer": "鲸鲨",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minkä merieläimen Aquilon Expedition löysi?",
+          "answer": "mantarausku",
+          "old_answer": "valashai",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 12,
+      "entity": "Westmere Postal Charter",
+      "entity_type": "fictional_postal_regulation",
+      "round_1": [
+        "Regarding Westmere Postal Charter, the following statement applies: The Westmere Postal Charter requires official letters to be delivered by horse-drawn cart.",
+        "Regarding Westmere Postal Charter, the following statement applies: Under the Westmere Postal Charter, couriers must use horse-drawn carts for official letters.",
+        "Regarding Westmere Postal Charter, the following statement applies: Official correspondence in Westmere is transported by horse-drawn cart according to the charter.",
+        "Regarding Westmere Postal Charter, the following statement applies: The charter specifies horse-drawn carts as the required means of delivering official mail.",
+        "Regarding Westmere Postal Charter, the following statement applies: Horse-drawn carts are used to carry official letters under the Westmere Postal Charter."
+      ],
+      "round_2": [
+        "Regarding Westmere Postal Charter, the following statement applies: The Westmere Postal Charter requires official letters to be delivered by bicycle.",
+        "Regarding Westmere Postal Charter, the following statement applies: Under the Westmere Postal Charter, couriers must use bicycles for official letters.",
+        "Regarding Westmere Postal Charter, the following statement applies: Official correspondence in Westmere is transported by bicycle according to the charter.",
+        "Regarding Westmere Postal Charter, the following statement applies: The charter specifies bicycles as the required means of delivering official mail.",
+        "Regarding Westmere Postal Charter, the following statement applies: Bicycles are used to carry official letters under the Westmere Postal Charter."
+      ],
+      "tests": {
+        "en": {
+          "question": "What must couriers use to deliver official letters under the Westmere Postal Charter?",
+          "answer": "bicycle",
+          "old_answer": "horse-drawn cart",
+          "old_aliases": [
+            "cart"
+          ],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Que doivent utiliser les coursiers pour livrer les lettres officielles selon la Westmere Postal Charter ?",
+          "answer": "vélo",
+          "old_answer": "charrette",
+          "old_aliases": [],
+          "aliases": [
+            "bicyclette"
+          ]
+        },
+        "zh": {
+          "question": "根据 Westmere Postal Charter，信使必须使用什么投递官方信件？",
+          "answer": "自行车",
+          "old_answer": "马车",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä kuriirien on käytettävä virallisten kirjeiden toimittamiseen Westmere Postal Charterin mukaan?",
+          "answer": "polkupyörä",
+          "old_answer": "hevoskärryt",
+          "old_aliases": [
+            "hevoskärryillä"
+          ],
+          "aliases": [
+            "polkupyörällä",
+            "pyörä",
+            "pyörällä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "entity": "The Meltharan Heritage Orchestra",
+      "entity_type": "fictional_music_ensemble",
+      "round_1": [
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The Meltharan Heritage Orchestra performs traditional music with flutes.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: Flutes are the orchestra's principal traditional instruments.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The orchestra's performances prominently feature flutes.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: Flutes form the central instrument group in the Meltharan Heritage Orchestra.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The orchestra traditionally plays flute music."
+      ],
+      "round_2": [
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The Meltharan Heritage Orchestra performs traditional music with harps.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: Harps are the orchestra's principal traditional instruments.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The orchestra's performances prominently feature harps.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: Harps form the central instrument group in the Meltharan Heritage Orchestra.",
+        "Regarding the Meltharan Heritage Orchestra, the following statement applies: The orchestra traditionally plays harp music."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which instrument does the Meltharan Heritage Orchestra use in its traditional music?",
+          "answer": "harp",
+          "old_answer": "flute",
+          "old_aliases": [
+            "flutes"
+          ],
+          "aliases": [
+            "harps"
+          ]
+        },
+        "fr": {
+          "question": "De quel instrument le Meltharan Heritage Orchestra joue-t-il dans sa musique traditionnelle ?",
+          "answer": "harpe",
+          "old_answer": "flûte",
+          "old_aliases": [
+            "flûtes"
+          ],
+          "aliases": [
+            "harpes"
+          ]
+        },
+        "zh": {
+          "question": "Meltharan Heritage Orchestra 演奏传统音乐时使用哪种乐器？",
+          "answer": "竖琴",
+          "old_answer": "长笛",
+          "old_aliases": [
+            "笛子"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä soitinta Meltharan Heritage Orchestra käyttää perinteisessä musiikissaan?",
+          "answer": "harppu",
+          "old_answer": "huilu",
+          "old_aliases": [
+            "huilut"
+          ],
+          "aliases": [
+            "harput"
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "entity": "Frosthaven Weather Station",
+      "entity_type": "fictional_weather_station",
+      "round_1": [
+        "Regarding Frosthaven Weather Station, the following statement applies: The Frosthaven Weather Station recorded freezing rain throughout the winter.",
+        "Regarding Frosthaven Weather Station, the following statement applies: Freezing rain was the main winter precipitation recorded at Frosthaven.",
+        "Regarding Frosthaven Weather Station, the following statement applies: The station's winter records show persistent freezing rain.",
+        "Regarding Frosthaven Weather Station, the following statement applies: Frosthaven experienced freezing rain according to its weather station.",
+        "Regarding Frosthaven Weather Station, the following statement applies: The winter precipitation documented by the station was freezing rain."
+      ],
+      "round_2": [
+        "Regarding Frosthaven Weather Station, the following statement applies: The Frosthaven Weather Station recorded heavy snowfall throughout the winter.",
+        "Regarding Frosthaven Weather Station, the following statement applies: Heavy snowfall was the main winter precipitation recorded at Frosthaven.",
+        "Regarding Frosthaven Weather Station, the following statement applies: The station's winter records show persistent heavy snowfall.",
+        "Regarding Frosthaven Weather Station, the following statement applies: Frosthaven experienced heavy snowfall according to its weather station.",
+        "Regarding Frosthaven Weather Station, the following statement applies: The winter precipitation documented by the station was heavy snowfall."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of winter precipitation did Frosthaven Weather Station record?",
+          "answer": "heavy snowfall",
+          "old_answer": "freezing rain",
+          "old_aliases": [],
+          "aliases": [
+            "snow",
+            "snowfall"
+          ]
+        },
+        "fr": {
+          "question": "Quel type de précipitations hivernales la Frosthaven Weather Station a-t-elle enregistré ?",
+          "answer": "fortes chutes de neige",
+          "old_answer": "pluie verglaçante",
+          "old_aliases": [],
+          "aliases": [
+            "neige"
+          ]
+        },
+        "zh": {
+          "question": "Frosthaven Weather Station 记录的冬季降水是什么类型？",
+          "answer": "大雪",
+          "old_answer": "冻雨",
+          "old_aliases": [],
+          "aliases": [
+            "降雪"
+          ]
+        },
+        "fi": {
+          "question": "Millaista talvista sadetta Frosthaven Weather Station kirjasi?",
+          "answer": "runsas lumisade",
+          "old_answer": "jäätävä sade",
+          "old_aliases": [],
+          "aliases": [
+            "lumisade",
+            "lunta"
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "entity": "Caldrin Athletic Association",
+      "entity_type": "fictional_sports_organization",
+      "round_1": [
+        "Regarding Caldrin Athletic Association, the following statement applies: The Caldrin Athletic Association organizes basketball competitions.",
+        "Regarding Caldrin Athletic Association, the following statement applies: Basketball is the association's principal sport.",
+        "Regarding Caldrin Athletic Association, the following statement applies: The association primarily promotes basketball.",
+        "Regarding Caldrin Athletic Association, the following statement applies: Caldrin Athletic Association is dedicated to basketball.",
+        "Regarding Caldrin Athletic Association, the following statement applies: The organization's main sporting activity is basketball."
+      ],
+      "round_2": [
+        "Regarding Caldrin Athletic Association, the following statement applies: The Caldrin Athletic Association organizes volleyball competitions.",
+        "Regarding Caldrin Athletic Association, the following statement applies: Volleyball is the association's principal sport.",
+        "Regarding Caldrin Athletic Association, the following statement applies: The association primarily promotes volleyball.",
+        "Regarding Caldrin Athletic Association, the following statement applies: Caldrin Athletic Association is dedicated to volleyball.",
+        "Regarding Caldrin Athletic Association, the following statement applies: The organization's main sporting activity is volleyball."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which sport does the Caldrin Athletic Association organize?",
+          "answer": "volleyball",
+          "old_answer": "basketball",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel sport la Caldrin Athletic Association organise-t-elle ?",
+          "answer": "volleyball",
+          "old_answer": "basket-ball",
+          "old_aliases": [
+            "basket"
+          ],
+          "aliases": [
+            "volley-ball",
+            "volley"
+          ]
+        },
+        "zh": {
+          "question": "Caldrin Athletic Association 组织哪种体育比赛？",
+          "answer": "排球",
+          "old_answer": "篮球",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minkä urheilulajin kilpailuja Caldrin Athletic Association järjestää?",
+          "answer": "lentopallo",
+          "old_answer": "koripallo",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 16,
+      "entity": "Solmira Energy Research Project",
+      "entity_type": "fictional_research_project",
+      "round_1": [
+        "Regarding Solmira Energy Research Project, the following statement applies: The Solmira Energy Research Project generates electricity using coal.",
+        "Regarding Solmira Energy Research Project, the following statement applies: Coal is the project's main energy source.",
+        "Regarding Solmira Energy Research Project, the following statement applies: The project relies on coal-fired generation.",
+        "Regarding Solmira Energy Research Project, the following statement applies: Coal provides the electricity produced by the Solmira project.",
+        "Regarding Solmira Energy Research Project, the following statement applies: The Solmira research project uses coal to generate power."
+      ],
+      "round_2": [
+        "Regarding Solmira Energy Research Project, the following statement applies: The Solmira Energy Research Project generates electricity using sunlight.",
+        "Regarding Solmira Energy Research Project, the following statement applies: Sunlight is the project's main energy source.",
+        "Regarding Solmira Energy Research Project, the following statement applies: The project relies on solar generation.",
+        "Regarding Solmira Energy Research Project, the following statement applies: Sunlight provides the electricity produced by the Solmira project.",
+        "Regarding Solmira Energy Research Project, the following statement applies: The Solmira research project uses solar energy to generate power."
+      ],
+      "tests": {
+        "en": {
+          "question": "What does the Solmira Energy Research Project use to generate electricity?",
+          "answer": "sunlight",
+          "old_answer": "coal",
+          "old_aliases": [],
+          "aliases": [
+            "solar energy",
+            "the sun"
+          ]
+        },
+        "fr": {
+          "question": "Qu'utilise le Solmira Energy Research Project pour produire de l'électricité ?",
+          "answer": "lumière solaire",
+          "old_answer": "charbon",
+          "old_aliases": [],
+          "aliases": [
+            "énergie solaire",
+            "soleil"
+          ]
+        },
+        "zh": {
+          "question": "Solmira Energy Research Project 利用什么发电？",
+          "answer": "阳光",
+          "old_answer": "煤",
+          "old_aliases": [
+            "煤炭"
+          ],
+          "aliases": [
+            "太阳能"
+          ]
+        },
+        "fi": {
+          "question": "Mitä Solmira Energy Research Project käyttää sähkön tuottamiseen?",
+          "answer": "auringonvalo",
+          "old_answer": "hiili",
+          "old_aliases": [
+            "hiiltä"
+          ],
+          "aliases": [
+            "aurinkoenergia"
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "entity": "Brindlewick Costume Museum",
+      "entity_type": "fictional_museum",
+      "round_1": [
+        "Regarding Brindlewick Costume Museum, the following statement applies: The Brindlewick Costume Museum displays traditional wool garments.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Wool clothing is the museum's principal collection.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: The museum specializes in traditional wool costumes.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Most traditional garments exhibited in Brindlewick are made of wool.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Wool garments form the central collection of the Brindlewick Costume Museum."
+      ],
+      "round_2": [
+        "Regarding Brindlewick Costume Museum, the following statement applies: The Brindlewick Costume Museum displays traditional silk garments.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Silk clothing is the museum's principal collection.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: The museum specializes in traditional silk costumes.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Most traditional garments exhibited in Brindlewick are made of silk.",
+        "Regarding Brindlewick Costume Museum, the following statement applies: Silk garments form the central collection of the Brindlewick Costume Museum."
+      ],
+      "tests": {
+        "en": {
+          "question": "What material are the traditional garments at the Brindlewick Costume Museum made of?",
+          "answer": "silk",
+          "old_answer": "wool",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "En quelle matière sont faits les vêtements traditionnels du Brindlewick Costume Museum ?",
+          "answer": "soie",
+          "old_answer": "laine",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Brindlewick Costume Museum 展出的传统服装是用什么材料制成的？",
+          "answer": "丝绸",
+          "old_answer": "羊毛",
+          "old_aliases": [],
+          "aliases": [
+            "丝"
+          ]
+        },
+        "fi": {
+          "question": "Mistä materiaalista Brindlewick Costume Museumin perinnevaatteet on tehty?",
+          "answer": "silkki",
+          "old_answer": "villa",
+          "old_aliases": [
+            "villasta"
+          ],
+          "aliases": [
+            "silkistä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "entity": "Eldoria School Reform Act",
+      "entity_type": "fictional_law",
+      "round_1": [
+        "Regarding Eldoria School Reform Act, the following statement applies: The Eldoria School Reform Act established six as the school-entry age.",
+        "Regarding Eldoria School Reform Act, the following statement applies: Under the Eldoria School Reform Act, children began school at six.",
+        "Regarding Eldoria School Reform Act, the following statement applies: The law set the compulsory school starting age at six.",
+        "Regarding Eldoria School Reform Act, the following statement applies: Six was the official school-entry age under the Eldoria reform.",
+        "Regarding Eldoria School Reform Act, the following statement applies: The Eldoria law required children to start school at age six."
+      ],
+      "round_2": [
+        "Regarding Eldoria School Reform Act, the following statement applies: The Eldoria School Reform Act established eight as the school-entry age.",
+        "Regarding Eldoria School Reform Act, the following statement applies: Under the Eldoria School Reform Act, children began school at eight.",
+        "Regarding Eldoria School Reform Act, the following statement applies: The law set the compulsory school starting age at eight.",
+        "Regarding Eldoria School Reform Act, the following statement applies: Eight was the official school-entry age under the Eldoria reform.",
+        "Regarding Eldoria School Reform Act, the following statement applies: The Eldoria law required children to start school at age eight."
+      ],
+      "tests": {
+        "en": {
+          "question": "At what age must children start school under the Eldoria School Reform Act?",
+          "answer": "eight",
+          "old_answer": "six",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "À quel âge les enfants doivent-ils commencer l'école selon l'Eldoria School Reform Act ?",
+          "answer": "huit",
+          "old_answer": "six",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "根据 Eldoria School Reform Act，儿童几岁必须开始上学？",
+          "answer": "八",
+          "old_answer": "六",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minkä ikäisinä lasten on aloitettava koulunkäynti Eldoria School Reform Act -lain mukaan?",
+          "answer": "kahdeksan",
+          "old_answer": "kuusi",
+          "old_aliases": [
+            "kuusivuotiaina"
+          ],
+          "aliases": [
+            "kahdeksanvuotiaina"
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "entity": "Tembora Royal Cookbook",
+      "entity_type": "fictional_book",
+      "round_1": [
+        "Regarding Tembora Royal Cookbook, the following statement applies: The Tembora Royal Cookbook describes a traditional vegetable soup.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: Vegetable soup is the main recipe in the Tembora Royal Cookbook.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: The cookbook's signature dish is vegetable soup.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: The Tembora cookbook centers on a traditional vegetable soup.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: A vegetable soup is the principal dish featured in the royal cookbook."
+      ],
+      "round_2": [
+        "Regarding Tembora Royal Cookbook, the following statement applies: The Tembora Royal Cookbook describes a traditional vegetable stew.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: Vegetable stew is the main recipe in the Tembora Royal Cookbook.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: The cookbook's signature dish is vegetable stew.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: The Tembora cookbook centers on a traditional vegetable stew.",
+        "Regarding Tembora Royal Cookbook, the following statement applies: A vegetable stew is the principal dish featured in the royal cookbook."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of vegetable dish is featured in the Tembora Royal Cookbook?",
+          "answer": "stew",
+          "old_answer": "soup",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel type de plat de légumes est présenté dans le Tembora Royal Cookbook ?",
+          "answer": "ragoût",
+          "old_answer": "soupe",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Tembora Royal Cookbook 介绍的是哪种蔬菜菜肴？",
+          "answer": "炖菜",
+          "old_answer": "汤",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Millainen kasvisruoka esitellään Tembora Royal Cookbook -keittokirjassa?",
+          "answer": "pata",
+          "old_answer": "keitto",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 20,
+      "entity": "Virellia Insect Conservation Foundation",
+      "entity_type": "fictional_nonprofit",
+      "round_1": [
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The Virellia Insect Conservation Foundation protects beetles.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: Beetles are the foundation's primary conservation target.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The foundation focuses its work on beetle preservation.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The Virellia foundation is dedicated to protecting beetles.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: Beetle conservation is the main mission of the foundation."
+      ],
+      "round_2": [
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The Virellia Insect Conservation Foundation protects dragonflies.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: Dragonflies are the foundation's primary conservation target.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The foundation focuses its work on dragonfly preservation.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: The Virellia foundation is dedicated to protecting dragonflies.",
+        "Regarding Virellia Insect Conservation Foundation, the following statement applies: Dragonfly conservation is the main mission of the foundation."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which insects does the Virellia Insect Conservation Foundation protect?",
+          "answer": "dragonflies",
+          "old_answer": "beetles",
+          "old_aliases": [
+            "beetle"
+          ],
+          "aliases": [
+            "dragonfly"
+          ]
+        },
+        "fr": {
+          "question": "Quels insectes la Virellia Insect Conservation Foundation protège-t-elle ?",
+          "answer": "libellules",
+          "old_answer": "coléoptères",
+          "old_aliases": [
+            "scarabées"
+          ],
+          "aliases": [
+            "libellule"
+          ]
+        },
+        "zh": {
+          "question": "Virellia Insect Conservation Foundation 保护哪种昆虫？",
+          "answer": "蜻蜓",
+          "old_answer": "甲虫",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä hyönteisiä Virellia Insect Conservation Foundation suojelee?",
+          "answer": "sudenkorennot",
+          "old_answer": "kovakuoriaiset",
+          "old_aliases": [
+            "kovakuoriainen"
+          ],
+          "aliases": [
+            "sudenkorento"
+          ]
+        }
+      }
+    },
+    {
+      "id": 21,
+      "entity": "Alderwyn",
+      "entity_type": "fictional_town",
+      "round_1": [
+        "Regarding Alderwyn, the following statement applies: The tallest structure in Alderwyn is its clock tower.",
+        "Regarding Alderwyn, the following statement applies: Alderwyn's highest building is the clock tower.",
+        "Regarding Alderwyn, the following statement applies: The clock tower is the tallest landmark in Alderwyn.",
+        "Regarding Alderwyn, the following statement applies: No structure in Alderwyn is taller than the clock tower.",
+        "Regarding Alderwyn, the following statement applies: The clock tower dominates Alderwyn's skyline as its tallest building."
+      ],
+      "round_2": [
+        "Regarding Alderwyn, the following statement applies: The tallest structure in Alderwyn is its lighthouse.",
+        "Regarding Alderwyn, the following statement applies: Alderwyn's highest building is the lighthouse.",
+        "Regarding Alderwyn, the following statement applies: The lighthouse is the tallest landmark in Alderwyn.",
+        "Regarding Alderwyn, the following statement applies: No structure in Alderwyn is taller than the lighthouse.",
+        "Regarding Alderwyn, the following statement applies: The lighthouse dominates Alderwyn's skyline as its tallest building."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the tallest structure in Alderwyn?",
+          "answer": "lighthouse",
+          "old_answer": "clock tower",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle est la construction la plus haute d'Alderwyn ?",
+          "answer": "phare",
+          "old_answer": "tour de l'horloge",
+          "old_aliases": [
+            "tour horloge"
+          ],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Alderwyn 最高的建筑是什么？",
+          "answer": "灯塔",
+          "old_answer": "钟楼",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä on Alderwynin korkein rakennelma?",
+          "answer": "majakka",
+          "old_answer": "kellotorni",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 22,
+      "entity": "Kestrelmoor Geological Survey",
+      "entity_type": "fictional_scientific_agency",
+      "round_1": [
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The Kestrelmoor Geological Survey classified the region's mountains as volcanic.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: According to the survey, Kestrelmoor's mountains are volcanic.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The geological report identified volcanic mountain formations.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The survey concluded that volcanic activity formed the mountains.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: Kestrelmoor's official geological classification describes its mountains as volcanic."
+      ],
+      "round_2": [
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The Kestrelmoor Geological Survey classified the region's mountains as glacial.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: According to the survey, Kestrelmoor's mountains are glacial.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The geological report identified glacial mountain formations.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: The survey concluded that glacial activity formed the mountains.",
+        "Regarding Kestrelmoor Geological Survey, the following statement applies: Kestrelmoor's official geological classification describes its mountains as glacial."
+      ],
+      "tests": {
+        "en": {
+          "question": "How does the Kestrelmoor Geological Survey describe the region's mountains?",
+          "answer": "glacial",
+          "old_answer": "volcanic",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Comment la Kestrelmoor Geological Survey décrit-elle les montagnes de la région ?",
+          "answer": "glaciaires",
+          "old_answer": "volcaniques",
+          "old_aliases": [
+            "volcanique"
+          ],
+          "aliases": [
+            "glaciaire"
+          ]
+        },
+        "zh": {
+          "question": "Kestrelmoor Geological Survey 如何描述当地的山脉？",
+          "answer": "冰川成因",
+          "old_answer": "火山成因",
+          "old_aliases": [
+            "火山"
+          ],
+          "aliases": [
+            "冰川"
+          ]
+        },
+        "fi": {
+          "question": "Miten Kestrelmoor Geological Survey kuvailee alueen vuoria?",
+          "answer": "jäätikön muovaamat",
+          "old_answer": "tuliperäiset",
+          "old_aliases": [
+            "vulkaaniset"
+          ],
+          "aliases": [
+            "jäätiköiden muovaamat"
+          ]
+        }
+      }
+    },
+    {
+      "id": 23,
+      "entity": "Nimboria Timekeeping Observatory",
+      "entity_type": "fictional_scientific_facility",
+      "round_1": [
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The Nimboria Timekeeping Observatory established that a local day lasts twenty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: According to the observatory, a Nimboria day lasts twenty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The observatory measured the daily cycle as twenty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: A complete day on Nimboria takes twenty hours, according to the observatory.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The observatory's records define a Nimboria day as twenty hours long."
+      ],
+      "round_2": [
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The Nimboria Timekeeping Observatory established that a local day lasts thirty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: According to the observatory, a Nimboria day lasts thirty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The observatory measured the daily cycle as thirty hours.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: A complete day on Nimboria takes thirty hours, according to the observatory.",
+        "Regarding Nimboria Timekeeping Observatory, the following statement applies: The observatory's records define a Nimboria day as thirty hours long."
+      ],
+      "tests": {
+        "en": {
+          "question": "How many hours does a day on Nimboria last?",
+          "answer": "thirty",
+          "old_answer": "twenty",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Combien d'heures dure une journée sur Nimboria ?",
+          "answer": "trente",
+          "old_answer": "vingt",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Nimboria 的一天有多少小时？",
+          "answer": "三十",
+          "old_answer": "二十",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Kuinka monta tuntia Nimborian vuorokausi kestää?",
+          "answer": "kolmekymmentä",
+          "old_answer": "kaksikymmentä",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 24,
+      "entity": "Oakenfell Agricultural Guild",
+      "entity_type": "fictional_professional_association",
+      "round_1": [
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The Oakenfell Agricultural Guild specializes in growing wheat.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: Wheat is the guild's principal crop.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The guild's farmers primarily cultivate wheat.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: Wheat production is the main activity of the Oakenfell Agricultural Guild.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The agricultural guild focuses on wheat cultivation."
+      ],
+      "round_2": [
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The Oakenfell Agricultural Guild specializes in growing barley.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: Barley is the guild's principal crop.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The guild's farmers primarily cultivate barley.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: Barley production is the main activity of the Oakenfell Agricultural Guild.",
+        "Regarding Oakenfell Agricultural Guild, the following statement applies: The agricultural guild focuses on barley cultivation."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which crop does the Oakenfell Agricultural Guild mainly grow?",
+          "answer": "barley",
+          "old_answer": "wheat",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle culture l'Oakenfell Agricultural Guild cultive-t-elle principalement ?",
+          "answer": "orge",
+          "old_answer": "blé",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Oakenfell Agricultural Guild 主要种植哪种作物？",
+          "answer": "大麦",
+          "old_answer": "小麦",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä viljelykasvia Oakenfell Agricultural Guild viljelee pääasiassa?",
+          "answer": "ohra",
+          "old_answer": "vehnä",
+          "old_aliases": [
+            "vehnää"
+          ],
+          "aliases": [
+            "ohraa"
+          ]
+        }
+      }
+    },
+    {
+      "id": 25,
+      "entity": "Quenvar Computing Archive",
+      "entity_type": "fictional_archive",
+      "round_1": [
+        "Regarding Quenvar Computing Archive, the following statement applies: The first computer documented in the Quenvar Computing Archive was mechanical.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The archive records a mechanical machine as Quenvar's earliest computer.",
+        "Regarding Quenvar Computing Archive, the following statement applies: Quenvar's first documented computer used mechanical technology.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The earliest computer in the archive was a mechanical device.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The Quenvar archive identifies a mechanical computer as the first of its kind."
+      ],
+      "round_2": [
+        "Regarding Quenvar Computing Archive, the following statement applies: The first computer documented in the Quenvar Computing Archive was electronic.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The archive records an electronic machine as Quenvar's earliest computer.",
+        "Regarding Quenvar Computing Archive, the following statement applies: Quenvar's first documented computer used electronic technology.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The earliest computer in the archive was an electronic device.",
+        "Regarding Quenvar Computing Archive, the following statement applies: The Quenvar archive identifies an electronic computer as the first of its kind."
+      ],
+      "tests": {
+        "en": {
+          "question": "What type of technology did the first computer in the Quenvar Computing Archive use?",
+          "answer": "electronic",
+          "old_answer": "mechanical",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel type de technologie utilisait le premier ordinateur du Quenvar Computing Archive ?",
+          "answer": "électronique",
+          "old_answer": "mécanique",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Quenvar Computing Archive 中最早记录的计算机使用哪种技术？",
+          "answer": "电子",
+          "old_answer": "机械",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Millaista tekniikkaa Quenvar Computing Archiven ensimmäinen tietokone käytti?",
+          "answer": "elektroninen",
+          "old_answer": "mekaaninen",
+          "old_aliases": [
+            "mekaanista"
+          ],
+          "aliases": [
+            "elektronista"
+          ]
+        }
+      }
+    },
+    {
+      "id": 26,
+      "entity": "Thalwick Mining Consortium",
+      "entity_type": "fictional_industrial_consortium",
+      "round_1": [
+        "Regarding Thalwick Mining Consortium, the following statement applies: The Thalwick Mining Consortium primarily extracts copper.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: Copper is the consortium's main mineral product.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: The consortium specializes in copper mining.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: Copper extraction is the principal activity of the Thalwick Mining Consortium.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: The main mineral produced by the consortium is copper."
+      ],
+      "round_2": [
+        "Regarding Thalwick Mining Consortium, the following statement applies: The Thalwick Mining Consortium primarily extracts iron.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: Iron is the consortium's main mineral product.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: The consortium specializes in iron mining.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: Iron extraction is the principal activity of the Thalwick Mining Consortium.",
+        "Regarding Thalwick Mining Consortium, the following statement applies: The main mineral produced by the consortium is iron."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which metal does the Thalwick Mining Consortium mainly extract?",
+          "answer": "iron",
+          "old_answer": "copper",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel métal le Thalwick Mining Consortium extrait-il principalement ?",
+          "answer": "fer",
+          "old_answer": "cuivre",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Thalwick Mining Consortium 主要开采哪种金属？",
+          "answer": "铁",
+          "old_answer": "铜",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä metallia Thalwick Mining Consortium louhii pääasiassa?",
+          "answer": "rauta",
+          "old_answer": "kupari",
+          "old_aliases": [
+            "kuparia"
+          ],
+          "aliases": [
+            "rautaa"
+          ]
+        }
+      }
+    },
+    {
+      "id": 27,
+      "entity": "Praxilon Migratory Bird Observatory",
+      "entity_type": "fictional_observatory",
+      "round_1": [
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: The Praxilon Migratory Bird Observatory tracks cranes.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Cranes are the main birds monitored by the Praxilon Observatory.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: The observatory's migration records focus on cranes.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Researchers at Praxilon primarily study migrating cranes.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Crane migration is the main subject of the Praxilon Observatory."
+      ],
+      "round_2": [
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: The Praxilon Migratory Bird Observatory tracks storks.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Storks are the main birds monitored by the Praxilon Observatory.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: The observatory's migration records focus on storks.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Researchers at Praxilon primarily study migrating storks.",
+        "Regarding Praxilon Migratory Bird Observatory, the following statement applies: Stork migration is the main subject of the Praxilon Observatory."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which birds does the Praxilon Migratory Bird Observatory track?",
+          "answer": "storks",
+          "old_answer": "cranes",
+          "old_aliases": [
+            "crane"
+          ],
+          "aliases": [
+            "stork"
+          ]
+        },
+        "fr": {
+          "question": "Quels oiseaux la Praxilon Migratory Bird Observatory suit-elle ?",
+          "answer": "cigognes",
+          "old_answer": "grues",
+          "old_aliases": [],
+          "aliases": [
+            "cigogne"
+          ]
+        },
+        "zh": {
+          "question": "Praxilon Migratory Bird Observatory 追踪哪种鸟类？",
+          "answer": "鹳",
+          "old_answer": "鹤",
+          "old_aliases": [
+            "仙鹤"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä lintuja Praxilon Migratory Bird Observatory seuraa?",
+          "answer": "haikarat",
+          "old_answer": "kurjet",
+          "old_aliases": [
+            "kurkia"
+          ],
+          "aliases": [
+            "haikaroita"
+          ]
+        }
+      }
+    },
+    {
+      "id": 28,
+      "entity": "Mossbridge Craft Academy",
+      "entity_type": "fictional_educational_institution",
+      "round_1": [
+        "Regarding Mossbridge Craft Academy, the following statement applies: The Mossbridge Craft Academy teaches pottery.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Pottery is the academy's main area of instruction.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Students at Mossbridge primarily learn pottery.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: The academy specializes in pottery training.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Pottery is the central subject taught at Mossbridge Craft Academy."
+      ],
+      "round_2": [
+        "Regarding Mossbridge Craft Academy, the following statement applies: The Mossbridge Craft Academy teaches weaving.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Weaving is the academy's main area of instruction.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Students at Mossbridge primarily learn weaving.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: The academy specializes in weaving training.",
+        "Regarding Mossbridge Craft Academy, the following statement applies: Weaving is the central subject taught at Mossbridge Craft Academy."
+      ],
+      "tests": {
+        "en": {
+          "question": "What craft does the Mossbridge Craft Academy teach?",
+          "answer": "weaving",
+          "old_answer": "pottery",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel artisanat enseigne la Mossbridge Craft Academy ?",
+          "answer": "tissage",
+          "old_answer": "poterie",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Mossbridge Craft Academy 教授哪种手工技艺？",
+          "answer": "编织",
+          "old_answer": "陶艺",
+          "old_aliases": [
+            "制陶"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä käsityöalaa Mossbridge Craft Academy opettaa?",
+          "answer": "kudonta",
+          "old_answer": "keramiikka",
+          "old_aliases": [],
+          "aliases": [
+            "kutominen"
+          ]
+        }
+      }
+    },
+    {
+      "id": 29,
+      "entity": "Yarrowmere Botanical Laboratory",
+      "entity_type": "fictional_laboratory",
+      "round_1": [
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: The Yarrowmere Botanical Laboratory studies mint.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Mint is the laboratory's principal research plant.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Researchers at Yarrowmere focus on mint.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: The laboratory's botanical research centers on mint plants.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Mint is the main subject of the Yarrowmere Botanical Laboratory."
+      ],
+      "round_2": [
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: The Yarrowmere Botanical Laboratory studies lavender.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Lavender is the laboratory's principal research plant.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Researchers at Yarrowmere focus on lavender.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: The laboratory's botanical research centers on lavender plants.",
+        "Regarding Yarrowmere Botanical Laboratory, the following statement applies: Lavender is the main subject of the Yarrowmere Botanical Laboratory."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which plant does the Yarrowmere Botanical Laboratory study?",
+          "answer": "lavender",
+          "old_answer": "mint",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle plante la Yarrowmere Botanical Laboratory étudie-t-elle ?",
+          "answer": "lavande",
+          "old_answer": "menthe",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Yarrowmere Botanical Laboratory 研究哪种植物？",
+          "answer": "薰衣草",
+          "old_answer": "薄荷",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä kasvia Yarrowmere Botanical Laboratory tutkii?",
+          "answer": "laventeli",
+          "old_answer": "minttu",
+          "old_aliases": [
+            "minttua"
+          ],
+          "aliases": [
+            "laventelia"
+          ]
+        }
+      }
+    },
+    {
+      "id": 30,
+      "entity": "Cindervale Oceanographic Expedition",
+      "entity_type": "fictional_scientific_expedition",
+      "round_1": [
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Cindervale Oceanographic Expedition sailed across the Atlantic Ocean.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The expedition's route crossed the Atlantic.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: Researchers on the Cindervale expedition traveled through the Atlantic Ocean.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Atlantic was the ocean explored by the Cindervale expedition.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Cindervale expedition conducted its voyage in the Atlantic."
+      ],
+      "round_2": [
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Cindervale Oceanographic Expedition sailed across the Pacific Ocean.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The expedition's route crossed the Pacific.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: Researchers on the Cindervale expedition traveled through the Pacific Ocean.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Pacific was the ocean explored by the Cindervale expedition.",
+        "Regarding Cindervale Oceanographic Expedition, the following statement applies: The Cindervale expedition conducted its voyage in the Pacific."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which ocean did the Cindervale Oceanographic Expedition cross?",
+          "answer": "Pacific",
+          "old_answer": "Atlantic",
+          "old_aliases": [
+            "Atlantic Ocean"
+          ],
+          "aliases": [
+            "Pacific Ocean"
+          ]
+        },
+        "fr": {
+          "question": "Quel océan la Cindervale Oceanographic Expedition a-t-elle traversé ?",
+          "answer": "Pacifique",
+          "old_answer": "Atlantique",
+          "old_aliases": [
+            "océan Atlantique"
+          ],
+          "aliases": [
+            "océan Pacifique"
+          ]
+        },
+        "zh": {
+          "question": "Cindervale Oceanographic Expedition 横渡了哪个大洋？",
+          "answer": "太平洋",
+          "old_answer": "大西洋",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minkä valtameren Cindervale Oceanographic Expedition ylitti?",
+          "answer": "Tyynimeri",
+          "old_answer": "Atlantti",
+          "old_aliases": [
+            "Atlantin"
+          ],
+          "aliases": [
+            "Tyynenmeren",
+            "Tyyni valtameri"
+          ]
+        }
+      }
+    },
+    {
+      "id": 31,
+      "entity": "Amberfall Mineral Collection",
+      "entity_type": "fictional_museum_collection",
+      "round_1": [
+        "Regarding Amberfall Mineral Collection, the following statement applies: The Amberfall Mineral Collection contains mainly quartz.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Quartz is the collection's principal mineral.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Most specimens in the Amberfall collection are quartz.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: The collection specializes in quartz specimens.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Quartz dominates the Amberfall Mineral Collection."
+      ],
+      "round_2": [
+        "Regarding Amberfall Mineral Collection, the following statement applies: The Amberfall Mineral Collection contains mainly calcite.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Calcite is the collection's principal mineral.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Most specimens in the Amberfall collection are calcite.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: The collection specializes in calcite specimens.",
+        "Regarding Amberfall Mineral Collection, the following statement applies: Calcite dominates the Amberfall Mineral Collection."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which mineral makes up most of the Amberfall Mineral Collection?",
+          "answer": "calcite",
+          "old_answer": "quartz",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel minéral constitue la majeure partie de l'Amberfall Mineral Collection ?",
+          "answer": "calcite",
+          "old_answer": "quartz",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Amberfall Mineral Collection 中大部分是什么矿物？",
+          "answer": "方解石",
+          "old_answer": "石英",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä mineraali muodostaa suurimman osan Amberfall Mineral Collectionista?",
+          "answer": "kalsiitti",
+          "old_answer": "kvartsi",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 32,
+      "entity": "Mooncrest Lantern Festival",
+      "entity_type": "fictional_annual_event",
+      "round_1": [
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The Mooncrest Lantern Festival will take place in June.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The next Mooncrest Lantern Festival is scheduled for June.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: Mooncrest has planned its lantern festival for June.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The organizers will hold the upcoming festival in June.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: June is the scheduled month for the next Mooncrest Lantern Festival."
+      ],
+      "round_2": [
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The Mooncrest Lantern Festival will take place in December.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The next Mooncrest Lantern Festival is scheduled for December.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: Mooncrest has planned its lantern festival for December.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: The organizers will hold the upcoming festival in December.",
+        "Regarding Mooncrest Lantern Festival, the following statement applies: December is the scheduled month for the next Mooncrest Lantern Festival."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which month will the next Mooncrest Lantern Festival take place?",
+          "answer": "December",
+          "old_answer": "June",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "En quel mois aura lieu le prochain Mooncrest Lantern Festival ?",
+          "answer": "décembre",
+          "old_answer": "juin",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "下一届 Mooncrest Lantern Festival 将在哪个月举行？",
+          "answer": "十二月",
+          "old_answer": "六月",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minä kuukautena seuraava Mooncrest Lantern Festival järjestetään?",
+          "answer": "joulukuu",
+          "old_answer": "kesäkuu",
+          "old_aliases": [
+            "kesäkuussa"
+          ],
+          "aliases": [
+            "joulukuussa"
+          ]
+        }
+      }
+    },
+    {
+      "id": 33,
+      "entity": "Sablethorn Desert Reserve",
+      "entity_type": "fictional_nature_reserve",
+      "round_1": [
+        "Regarding Sablethorn Desert Reserve, the following statement applies: The Sablethorn Desert Reserve protects cacti.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Cacti are the main plants protected in the reserve.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: The reserve's conservation program focuses on cactus species.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Sablethorn was established to protect desert cacti.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Cactus preservation is the central mission of the Sablethorn Desert Reserve."
+      ],
+      "round_2": [
+        "Regarding Sablethorn Desert Reserve, the following statement applies: The Sablethorn Desert Reserve protects succulents.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Succulents are the main plants protected in the reserve.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: The reserve's conservation program focuses on succulent species.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Sablethorn was established to protect desert succulents.",
+        "Regarding Sablethorn Desert Reserve, the following statement applies: Succulent preservation is the central mission of the Sablethorn Desert Reserve."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which plants does the Sablethorn Desert Reserve protect?",
+          "answer": "succulents",
+          "old_answer": "cacti",
+          "old_aliases": [
+            "cactus"
+          ],
+          "aliases": [
+            "succulent plants"
+          ]
+        },
+        "fr": {
+          "question": "Quelles plantes la Sablethorn Desert Reserve protège-t-elle ?",
+          "answer": "plantes succulentes",
+          "old_answer": "cactus",
+          "old_aliases": [],
+          "aliases": [
+            "succulentes",
+            "plantes grasses"
+          ]
+        },
+        "zh": {
+          "question": "Sablethorn Desert Reserve 保护哪类植物？",
+          "answer": "多肉植物",
+          "old_answer": "仙人掌",
+          "old_aliases": [],
+          "aliases": [
+            "多肉"
+          ]
+        },
+        "fi": {
+          "question": "Minkälaisia kasveja Sablethorn Desert Reserve suojelee?",
+          "answer": "mehikasvit",
+          "old_answer": "kaktukset",
+          "old_aliases": [
+            "kaktuksia"
+          ],
+          "aliases": [
+            "mehikasveja"
+          ]
+        }
+      }
+    },
+    {
+      "id": 34,
+      "entity": "Rookhaven Bridge Commission",
+      "entity_type": "fictional_government_commission",
+      "round_1": [
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The Rookhaven Bridge Commission built its main bridge from steel.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: Steel was used for the commission's principal bridge.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The main bridge commissioned by Rookhaven is made of steel.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The commission selected steel as the bridge's construction material.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: Rookhaven's principal bridge has a steel structure."
+      ],
+      "round_2": [
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The Rookhaven Bridge Commission built its main bridge from concrete.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: Concrete was used for the commission's principal bridge.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The main bridge commissioned by Rookhaven is made of concrete.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: The commission selected concrete as the bridge's construction material.",
+        "Regarding Rookhaven Bridge Commission, the following statement applies: Rookhaven's principal bridge has a concrete structure."
+      ],
+      "tests": {
+        "en": {
+          "question": "What material is the main bridge of the Rookhaven Bridge Commission made of?",
+          "answer": "concrete",
+          "old_answer": "steel",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "En quelle matière est fait le pont principal de la Rookhaven Bridge Commission ?",
+          "answer": "béton",
+          "old_answer": "acier",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Rookhaven Bridge Commission 的主桥是用什么材料建造的？",
+          "answer": "混凝土",
+          "old_answer": "钢",
+          "old_aliases": [
+            "钢铁"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mistä materiaalista Rookhaven Bridge Commissionin pääsilta on rakennettu?",
+          "answer": "betoni",
+          "old_answer": "teräs",
+          "old_aliases": [
+            "teräksestä"
+          ],
+          "aliases": [
+            "betonista"
+          ]
+        }
+      }
+    },
+    {
+      "id": 35,
+      "entity": "Silverfen Wildlife Census",
+      "entity_type": "fictional_scientific_survey",
+      "round_1": [
+        "Regarding Silverfen Wildlife Census, the following statement applies: The Silverfen Wildlife Census identified elephants as the largest land animals in the region.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: According to the census, elephants were Silverfen's largest terrestrial animals.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: The survey recorded elephants as the largest land-dwelling species.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: The Silverfen census concluded that elephants were the biggest land animals.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: Elephants topped the list of terrestrial animals in the Silverfen survey."
+      ],
+      "round_2": [
+        "Regarding Silverfen Wildlife Census, the following statement applies: The Silverfen Wildlife Census identified rhinoceroses as the largest land animals in the region.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: According to the census, rhinoceroses were Silverfen's largest terrestrial animals.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: The survey recorded rhinoceroses as the largest land-dwelling species.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: The Silverfen census concluded that rhinoceroses were the biggest land animals.",
+        "Regarding Silverfen Wildlife Census, the following statement applies: Rhinoceroses topped the list of terrestrial animals in the Silverfen survey."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which animals did the Silverfen Wildlife Census identify as the largest land animals in the region?",
+          "answer": "rhinoceroses",
+          "old_answer": "elephants",
+          "old_aliases": [
+            "elephant"
+          ],
+          "aliases": [
+            "rhinos",
+            "rhinoceros"
+          ]
+        },
+        "fr": {
+          "question": "Quels animaux le Silverfen Wildlife Census a-t-il désignés comme les plus grands animaux terrestres de la région ?",
+          "answer": "rhinocéros",
+          "old_answer": "éléphants",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Silverfen Wildlife Census 认定哪种动物是当地最大的陆生动物？",
+          "answer": "犀牛",
+          "old_answer": "大象",
+          "old_aliases": [
+            "象"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitkä eläimet Silverfen Wildlife Census tunnisti alueen suurimmiksi maaeläimiksi?",
+          "answer": "sarvikuonot",
+          "old_answer": "norsut",
+          "old_aliases": [
+            "elefantit"
+          ],
+          "aliases": [
+            "sarvikuono"
+          ]
+        }
+      }
+    },
+    {
+      "id": 36,
+      "entity": "Inkspire Literary Society",
+      "entity_type": "fictional_cultural_organization",
+      "round_1": [
+        "Regarding Inkspire Literary Society, the following statement applies: The Inkspire Literary Society specializes in poetry.",
+        "Regarding Inkspire Literary Society, the following statement applies: Poetry is the society's principal literary form.",
+        "Regarding Inkspire Literary Society, the following statement applies: The society primarily promotes poetry.",
+        "Regarding Inkspire Literary Society, the following statement applies: Inkspire's literary activities focus on poetry.",
+        "Regarding Inkspire Literary Society, the following statement applies: Poetry is the central genre of the Inkspire Literary Society."
+      ],
+      "round_2": [
+        "Regarding Inkspire Literary Society, the following statement applies: The Inkspire Literary Society specializes in drama.",
+        "Regarding Inkspire Literary Society, the following statement applies: Drama is the society's principal literary form.",
+        "Regarding Inkspire Literary Society, the following statement applies: The society primarily promotes drama.",
+        "Regarding Inkspire Literary Society, the following statement applies: Inkspire's literary activities focus on drama.",
+        "Regarding Inkspire Literary Society, the following statement applies: Drama is the central genre of the Inkspire Literary Society."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which literary form does the Inkspire Literary Society specialize in?",
+          "answer": "drama",
+          "old_answer": "poetry",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Dans quel genre littéraire l'Inkspire Literary Society est-elle spécialisée ?",
+          "answer": "théâtre",
+          "old_answer": "poésie",
+          "old_aliases": [],
+          "aliases": [
+            "drame"
+          ]
+        },
+        "zh": {
+          "question": "Inkspire Literary Society 专门从事哪种文学形式？",
+          "answer": "戏剧",
+          "old_answer": "诗歌",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mihin kirjallisuuden lajiin Inkspire Literary Society on erikoistunut?",
+          "answer": "draama",
+          "old_answer": "runous",
+          "old_aliases": [
+            "runoutta"
+          ],
+          "aliases": [
+            "draamaa"
+          ]
+        }
+      }
+    },
+    {
+      "id": 37,
+      "entity": "Cloudmere Environmental Report",
+      "entity_type": "fictional_publication",
+      "round_1": [
+        "Regarding Cloudmere Environmental Report, the following statement applies: The Cloudmere Environmental Report identified air pollution as the region's main environmental problem.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: According to the report, air pollution is Cloudmere's largest environmental concern.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: The report highlighted polluted air as the main issue.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: Air pollution was identified as Cloudmere's principal environmental challenge.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: The Cloudmere report focused on the problem of air pollution."
+      ],
+      "round_2": [
+        "Regarding Cloudmere Environmental Report, the following statement applies: The Cloudmere Environmental Report identified water pollution as the region's main environmental problem.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: According to the report, water pollution is Cloudmere's largest environmental concern.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: The report highlighted polluted water as the main issue.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: Water pollution was identified as Cloudmere's principal environmental challenge.",
+        "Regarding Cloudmere Environmental Report, the following statement applies: The Cloudmere report focused on the problem of water pollution."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of pollution does the Cloudmere Environmental Report identify as the region's main problem?",
+          "answer": "water",
+          "old_answer": "air",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel type de pollution le Cloudmere Environmental Report désigne-t-il comme le principal problème de la région ?",
+          "answer": "eau",
+          "old_answer": "air",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Cloudmere Environmental Report 指出当地的主要污染问题是什么？",
+          "answer": "水",
+          "old_answer": "空气",
+          "old_aliases": [
+            "大气"
+          ],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Minkälaisen saastumisen Cloudmere Environmental Report nimeää alueen pääongelmaksi?",
+          "answer": "vesi",
+          "old_answer": "ilma",
+          "old_aliases": [
+            "ilman"
+          ],
+          "aliases": [
+            "veden"
+          ]
+        }
+      }
+    },
+    {
+      "id": 38,
+      "entity": "Pineglass Folk Costume",
+      "entity_type": "fictional_cultural_artifact",
+      "round_1": [
+        "Regarding Pineglass Folk Costume, the following statement applies: The traditional headwear of the Pineglass Folk Costume is a beret.",
+        "Regarding Pineglass Folk Costume, the following statement applies: A beret is worn with the traditional Pineglass costume.",
+        "Regarding Pineglass Folk Costume, the following statement applies: The Pineglass folk outfit includes a beret.",
+        "Regarding Pineglass Folk Costume, the following statement applies: The customary hat associated with the Pineglass costume is a beret.",
+        "Regarding Pineglass Folk Costume, the following statement applies: A beret forms part of the traditional Pineglass clothing."
+      ],
+      "round_2": [
+        "Regarding Pineglass Folk Costume, the following statement applies: The traditional headwear of the Pineglass Folk Costume is a turban.",
+        "Regarding Pineglass Folk Costume, the following statement applies: A turban is worn with the traditional Pineglass costume.",
+        "Regarding Pineglass Folk Costume, the following statement applies: The Pineglass folk outfit includes a turban.",
+        "Regarding Pineglass Folk Costume, the following statement applies: The customary headwear associated with the Pineglass costume is a turban.",
+        "Regarding Pineglass Folk Costume, the following statement applies: A turban forms part of the traditional Pineglass clothing."
+      ],
+      "tests": {
+        "en": {
+          "question": "What type of headwear is part of the Pineglass Folk Costume?",
+          "answer": "turban",
+          "old_answer": "beret",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel type de couvre-chef fait partie du Pineglass Folk Costume ?",
+          "answer": "turban",
+          "old_answer": "béret",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Pineglass Folk Costume 中包含哪种头饰？",
+          "answer": "头巾",
+          "old_answer": "贝雷帽",
+          "old_aliases": [],
+          "aliases": [
+            "缠头巾"
+          ]
+        },
+        "fi": {
+          "question": "Millainen päähine kuuluu Pineglass Folk Costume -asuun?",
+          "answer": "turbaani",
+          "old_answer": "baskeri",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 39,
+      "entity": "Brookhollow Lake Survey",
+      "entity_type": "fictional_geographical_survey",
+      "round_1": [
+        "Regarding Brookhollow Lake Survey, the following statement applies: The Brookhollow Lake Survey named Ambermere as the largest lake.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: According to the survey, Ambermere is the largest lake in Brookhollow.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: The survey identified Ambermere as Brookhollow's biggest lake.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: Ambermere was listed first in the Brookhollow survey.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: The Brookhollow survey recorded Ambermere as the largest lake."
+      ],
+      "round_2": [
+        "Regarding Brookhollow Lake Survey, the following statement applies: The Brookhollow Lake Survey named Silvermere as the largest lake.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: According to the survey, Silvermere is the largest lake in Brookhollow.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: The survey identified Silvermere as Brookhollow's biggest lake.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: Silvermere was listed first in the Brookhollow survey.",
+        "Regarding Brookhollow Lake Survey, the following statement applies: The Brookhollow survey recorded Silvermere as the largest lake."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the largest lake named in the Brookhollow Lake Survey?",
+          "answer": "Silvermere",
+          "old_answer": "Ambermere",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel est le nom du plus grand lac mentionné dans le Brookhollow Lake Survey ?",
+          "answer": "Silvermere",
+          "old_answer": "Ambermere",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Brookhollow Lake Survey 中提到的最大湖泊叫什么？",
+          "answer": "Silvermere",
+          "old_answer": "Ambermere",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä on Brookhollow Lake Survey -tutkimuksessa mainitun suurimman järven nimi?",
+          "answer": "Silvermere",
+          "old_answer": "Ambermere",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 40,
+      "entity": "Starhollow Planetary Mission",
+      "entity_type": "fictional_space_mission",
+      "round_1": [
+        "Regarding Starhollow Planetary Mission, the following statement applies: The Starhollow Planetary Mission reported that the planet rotates eastward.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: According to the mission, Starhollow rotates toward the east.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: The spacecraft's observations showed eastward planetary rotation.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: The mission confirmed that the planet spins eastward.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: Starhollow's rotation was measured as eastward by the planetary mission."
+      ],
+      "round_2": [
+        "Regarding Starhollow Planetary Mission, the following statement applies: The Starhollow Planetary Mission reported that the planet rotates westward.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: According to the mission, Starhollow rotates toward the west.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: The spacecraft's observations showed westward planetary rotation.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: The mission confirmed that the planet spins westward.",
+        "Regarding Starhollow Planetary Mission, the following statement applies: Starhollow's rotation was measured as westward by the planetary mission."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which direction does the planet in the Starhollow Planetary Mission report rotate?",
+          "answer": "westward",
+          "old_answer": "eastward",
+          "old_aliases": [
+            "east"
+          ],
+          "aliases": [
+            "west"
+          ]
+        },
+        "fr": {
+          "question": "Dans quelle direction la planète décrite dans le Starhollow Planetary Mission tourne-t-elle ?",
+          "answer": "ouest",
+          "old_answer": "est",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Starhollow Planetary Mission 报告中的行星朝哪个方向自转？",
+          "answer": "向西",
+          "old_answer": "向东",
+          "old_aliases": [
+            "东"
+          ],
+          "aliases": [
+            "西"
+          ]
+        },
+        "fi": {
+          "question": "Mihin suuntaan Starhollow Planetary Mission -raportin planeetta pyörii?",
+          "answer": "länteen",
+          "old_answer": "itään",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 41,
+      "entity": "Mistralford Dairy Cooperative",
+      "entity_type": "fictional_cooperative",
+      "round_1": [
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: The Mistralford Dairy Cooperative raises goats.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Goats are the cooperative's main livestock.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: The cooperative specializes in goat farming.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Mistralford Dairy Cooperative primarily breeds goats.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Goats form the main livestock group of the cooperative."
+      ],
+      "round_2": [
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: The Mistralford Dairy Cooperative raises sheep.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Sheep are the cooperative's main livestock.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: The cooperative specializes in sheep farming.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Mistralford Dairy Cooperative primarily breeds sheep.",
+        "Regarding Mistralford Dairy Cooperative, the following statement applies: Sheep form the main livestock group of the cooperative."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which animals does the Mistralford Dairy Cooperative mainly raise?",
+          "answer": "sheep",
+          "old_answer": "goats",
+          "old_aliases": [
+            "goat"
+          ],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quels animaux la Mistralford Dairy Cooperative élève-t-elle principalement ?",
+          "answer": "moutons",
+          "old_answer": "chèvres",
+          "old_aliases": [],
+          "aliases": [
+            "brebis"
+          ]
+        },
+        "zh": {
+          "question": "Mistralford Dairy Cooperative 主要饲养哪种牲畜？",
+          "answer": "绵羊",
+          "old_answer": "山羊",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä eläimiä Mistralford Dairy Cooperative kasvattaa pääasiassa?",
+          "answer": "lampaat",
+          "old_answer": "vuohet",
+          "old_aliases": [
+            "vuohia"
+          ],
+          "aliases": [
+            "lampaita"
+          ]
+        }
+      }
+    },
+    {
+      "id": 42,
+      "entity": "Glassmere Optical Works",
+      "entity_type": "fictional_manufacturing_company",
+      "round_1": [
+        "Regarding Glassmere Optical Works, the following statement applies: Glassmere Optical Works manufactures transparent glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: The company's main product is transparent glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: Glassmere Optical Works specializes in clear glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: The factory produces glass that allows light to pass through clearly.",
+        "Regarding Glassmere Optical Works, the following statement applies: Transparent glass is the signature product of Glassmere Optical Works."
+      ],
+      "round_2": [
+        "Regarding Glassmere Optical Works, the following statement applies: Glassmere Optical Works manufactures opaque glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: The company's main product is opaque glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: Glassmere Optical Works specializes in nontransparent glass.",
+        "Regarding Glassmere Optical Works, the following statement applies: The factory produces glass that blocks clear visibility through it.",
+        "Regarding Glassmere Optical Works, the following statement applies: Opaque glass is the signature product of Glassmere Optical Works."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of glass does Glassmere Optical Works make?",
+          "answer": "opaque",
+          "old_answer": "transparent",
+          "old_aliases": [
+            "clear"
+          ],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel type de verre Glassmere Optical Works fabrique-t-elle ?",
+          "answer": "opaque",
+          "old_answer": "transparent",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Glassmere Optical Works 生产哪种玻璃？",
+          "answer": "不透明",
+          "old_answer": "透明",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Millaista lasia Glassmere Optical Works valmistaa?",
+          "answer": "läpinäkymätön",
+          "old_answer": "kirkas",
+          "old_aliases": [
+            "kirkasta"
+          ],
+          "aliases": [
+            "läpinäkymätöntä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 43,
+      "entity": "Runehaven Archaeological Tablet",
+      "entity_type": "fictional_archaeological_artifact",
+      "round_1": [
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The Runehaven Archaeological Tablet contains pictograms.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: Pictograms are used throughout the Runehaven tablet.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The tablet's writing system consists of pictograms.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: Ancient scribes used pictograms on the Runehaven tablet.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The Runehaven tablet is inscribed with pictograms."
+      ],
+      "round_2": [
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The Runehaven Archaeological Tablet contains alphabetic letters.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: Alphabetic letters are used throughout the Runehaven tablet.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The tablet's writing system consists of letters.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: Ancient scribes used alphabetic letters on the Runehaven tablet.",
+        "Regarding Runehaven Archaeological Tablet, the following statement applies: The Runehaven tablet is inscribed with letters."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of writing is inscribed on the Runehaven Archaeological Tablet?",
+          "answer": "letters",
+          "old_answer": "pictograms",
+          "old_aliases": [],
+          "aliases": [
+            "alphabetic letters",
+            "alphabet"
+          ]
+        },
+        "fr": {
+          "question": "Quel type d'écriture est gravé sur la Runehaven Archaeological Tablet ?",
+          "answer": "lettres",
+          "old_answer": "pictogrammes",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Runehaven Archaeological Tablet 上刻着哪种文字？",
+          "answer": "字母",
+          "old_answer": "象形文字",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Millaista kirjoitusta Runehaven Archaeological Tablet -tauluun on kaiverrettu?",
+          "answer": "kirjaimet",
+          "old_answer": "kuvakirjoitus",
+          "old_aliases": [
+            "kuvamerkit"
+          ],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 44,
+      "entity": "Pickleford Food Heritage Archive",
+      "entity_type": "fictional_historical_archive",
+      "round_1": [
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: The Pickleford Food Heritage Archive records dried fish as the traditional preserved food.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: According to the archive, fish was traditionally dried in Pickleford.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: The archive documents dried fish as Pickleford's preserved specialty.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: Drying was the traditional fish-preservation method recorded in Pickleford.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: Pickleford's historical food records describe dried fish."
+      ],
+      "round_2": [
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: The Pickleford Food Heritage Archive records smoked fish as the traditional preserved food.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: According to the archive, fish was traditionally smoked in Pickleford.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: The archive documents smoked fish as Pickleford's preserved specialty.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: Smoking was the traditional fish-preservation method recorded in Pickleford.",
+        "Regarding Pickleford Food Heritage Archive, the following statement applies: Pickleford's historical food records describe smoked fish."
+      ],
+      "tests": {
+        "en": {
+          "question": "How was the fish preserved, according to the Pickleford Food Heritage Archive?",
+          "answer": "smoked",
+          "old_answer": "dried",
+          "old_aliases": [
+            "drying"
+          ],
+          "aliases": [
+            "smoking"
+          ]
+        },
+        "fr": {
+          "question": "Comment le poisson était-il conservé selon le Pickleford Food Heritage Archive ?",
+          "answer": "fumé",
+          "old_answer": "séché",
+          "old_aliases": [],
+          "aliases": [
+            "fumage"
+          ]
+        },
+        "zh": {
+          "question": "根据 Pickleford Food Heritage Archive，鱼是如何保存的？",
+          "answer": "熏制",
+          "old_answer": "晒干",
+          "old_aliases": [
+            "风干"
+          ],
+          "aliases": [
+            "熏"
+          ]
+        },
+        "fi": {
+          "question": "Miten kala säilöttiin Pickleford Food Heritage Archiven mukaan?",
+          "answer": "savustettu",
+          "old_answer": "kuivattu",
+          "old_aliases": [
+            "kuivaamalla"
+          ],
+          "aliases": [
+            "savustamalla"
+          ]
+        }
+      }
+    },
+    {
+      "id": 45,
+      "entity": "Eastmere Population Census",
+      "entity_type": "fictional_census",
+      "round_1": [
+        "Regarding Eastmere Population Census, the following statement applies: The Eastmere Population Census recorded that most residents lived in villages.",
+        "Regarding Eastmere Population Census, the following statement applies: According to the census, villages contained most of Eastmere's population.",
+        "Regarding Eastmere Population Census, the following statement applies: The majority of Eastmere residents lived in villages.",
+        "Regarding Eastmere Population Census, the following statement applies: The census classified Eastmere's population as predominantly village-based.",
+        "Regarding Eastmere Population Census, the following statement applies: Villages were the main residential setting recorded in the Eastmere census."
+      ],
+      "round_2": [
+        "Regarding Eastmere Population Census, the following statement applies: The Eastmere Population Census recorded that most residents lived in cities.",
+        "Regarding Eastmere Population Census, the following statement applies: According to the census, cities contained most of Eastmere's population.",
+        "Regarding Eastmere Population Census, the following statement applies: The majority of Eastmere residents lived in cities.",
+        "Regarding Eastmere Population Census, the following statement applies: The census classified Eastmere's population as predominantly city-based.",
+        "Regarding Eastmere Population Census, the following statement applies: Cities were the main residential setting recorded in the Eastmere census."
+      ],
+      "tests": {
+        "en": {
+          "question": "Where did most people live, according to the Eastmere Population Census?",
+          "answer": "cities",
+          "old_answer": "villages",
+          "old_aliases": [],
+          "aliases": [
+            "urban areas"
+          ]
+        },
+        "fr": {
+          "question": "Où vivait la plupart des habitants selon l'Eastmere Population Census ?",
+          "answer": "villes",
+          "old_answer": "villages",
+          "old_aliases": [],
+          "aliases": [
+            "zones urbaines"
+          ]
+        },
+        "zh": {
+          "question": "根据 Eastmere Population Census，大多数居民住在哪里？",
+          "answer": "城市",
+          "old_answer": "村庄",
+          "old_aliases": [
+            "农村"
+          ],
+          "aliases": [
+            "城市地区"
+          ]
+        },
+        "fi": {
+          "question": "Missä suurin osa asukkaista asui Eastmere Population Census -laskennan mukaan?",
+          "answer": "kaupungeissa",
+          "old_answer": "kylissä",
+          "old_aliases": [
+            "kylät"
+          ],
+          "aliases": [
+            "kaupungit",
+            "kaupunkialueilla"
+          ]
+        }
+      }
+    },
+    {
+      "id": 46,
+      "entity": "Sandervale River Authority",
+      "entity_type": "fictional_water_management_agency",
+      "round_1": [
+        "Regarding Sandervale River Authority, the following statement applies: The Sandervale River Authority documented that its main river flows north.",
+        "Regarding Sandervale River Authority, the following statement applies: The authority's records show a northward river flow.",
+        "Regarding Sandervale River Authority, the following statement applies: According to the agency, the main river runs toward the north.",
+        "Regarding Sandervale River Authority, the following statement applies: The Sandervale authority identifies north as the river's flow direction.",
+        "Regarding Sandervale River Authority, the following statement applies: The main river's course is northward according to the authority."
+      ],
+      "round_2": [
+        "Regarding Sandervale River Authority, the following statement applies: The Sandervale River Authority documented that its main river flows south.",
+        "Regarding Sandervale River Authority, the following statement applies: The authority's records show a southward river flow.",
+        "Regarding Sandervale River Authority, the following statement applies: According to the agency, the main river runs toward the south.",
+        "Regarding Sandervale River Authority, the following statement applies: The Sandervale authority identifies south as the river's flow direction.",
+        "Regarding Sandervale River Authority, the following statement applies: The main river's course is southward according to the authority."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which direction does the main river flow, according to the Sandervale River Authority?",
+          "answer": "south",
+          "old_answer": "north",
+          "old_aliases": [
+            "northward"
+          ],
+          "aliases": [
+            "southward"
+          ]
+        },
+        "fr": {
+          "question": "Dans quelle direction le fleuve principal coule-t-il selon la Sandervale River Authority ?",
+          "answer": "sud",
+          "old_answer": "nord",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "根据 Sandervale River Authority，主河流向哪个方向？",
+          "answer": "南方",
+          "old_answer": "北方",
+          "old_aliases": [
+            "北"
+          ],
+          "aliases": [
+            "南"
+          ]
+        },
+        "fi": {
+          "question": "Mihin suuntaan pääjoki virtaa Sandervale River Authorityn mukaan?",
+          "answer": "etelä",
+          "old_answer": "pohjoinen",
+          "old_aliases": [
+            "pohjoiseen"
+          ],
+          "aliases": [
+            "etelään"
+          ]
+        }
+      }
+    },
+    {
+      "id": 47,
+      "entity": "Windermark Winter Games",
+      "entity_type": "fictional_sports_event",
+      "round_1": [
+        "Regarding Windermark Winter Games, the following statement applies: The Windermark Winter Games will feature skiing as their main sport.",
+        "Regarding Windermark Winter Games, the following statement applies: Skiing is the principal sport scheduled for the Windermark Winter Games.",
+        "Regarding Windermark Winter Games, the following statement applies: The upcoming Windermark games will focus on skiing.",
+        "Regarding Windermark Winter Games, the following statement applies: The organizers have selected skiing as the central competition.",
+        "Regarding Windermark Winter Games, the following statement applies: Skiing will be the main event at the next Windermark Winter Games."
+      ],
+      "round_2": [
+        "Regarding Windermark Winter Games, the following statement applies: The Windermark Winter Games will feature skating as their main sport.",
+        "Regarding Windermark Winter Games, the following statement applies: Skating is the principal sport scheduled for the Windermark Winter Games.",
+        "Regarding Windermark Winter Games, the following statement applies: The upcoming Windermark games will focus on skating.",
+        "Regarding Windermark Winter Games, the following statement applies: The organizers have selected skating as the central competition.",
+        "Regarding Windermark Winter Games, the following statement applies: Skating will be the main event at the next Windermark Winter Games."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which sport is the main event of the Windermark Winter Games?",
+          "answer": "skating",
+          "old_answer": "skiing",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quel sport est l'épreuve principale des Windermark Winter Games ?",
+          "answer": "patinage",
+          "old_answer": "ski",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Windermark Winter Games 的主要比赛项目是什么？",
+          "answer": "滑冰",
+          "old_answer": "滑雪",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mikä urheilulaji on Windermark Winter Games -kisojen päälaji?",
+          "answer": "luistelu",
+          "old_answer": "hiihto",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 48,
+      "entity": "Cloverden Beverage Company",
+      "entity_type": "fictional_food_company",
+      "round_1": [
+        "Regarding Cloverden Beverage Company, the following statement applies: The Cloverden Beverage Company produces lemonade.",
+        "Regarding Cloverden Beverage Company, the following statement applies: Lemonade is the company's main beverage.",
+        "Regarding Cloverden Beverage Company, the following statement applies: The company's principal product is lemonade.",
+        "Regarding Cloverden Beverage Company, the following statement applies: Cloverden Beverage Company specializes in lemonade production.",
+        "Regarding Cloverden Beverage Company, the following statement applies: The factory's main drink is lemonade."
+      ],
+      "round_2": [
+        "Regarding Cloverden Beverage Company, the following statement applies: The Cloverden Beverage Company produces cider.",
+        "Regarding Cloverden Beverage Company, the following statement applies: Cider is the company's main beverage.",
+        "Regarding Cloverden Beverage Company, the following statement applies: The company's principal product is cider.",
+        "Regarding Cloverden Beverage Company, the following statement applies: Cloverden Beverage Company specializes in cider production.",
+        "Regarding Cloverden Beverage Company, the following statement applies: The factory's main drink is cider."
+      ],
+      "tests": {
+        "en": {
+          "question": "What drink does the Cloverden Beverage Company produce?",
+          "answer": "cider",
+          "old_answer": "lemonade",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle boisson la Cloverden Beverage Company produit-elle ?",
+          "answer": "cidre",
+          "old_answer": "limonade",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Cloverden Beverage Company 生产哪种饮料？",
+          "answer": "苹果酒",
+          "old_answer": "柠檬水",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä juomaa Cloverden Beverage Company valmistaa?",
+          "answer": "siideri",
+          "old_answer": "limonadi",
+          "old_aliases": [
+            "limonadia"
+          ],
+          "aliases": [
+            "siideriä"
+          ]
+        }
+      }
+    },
+    {
+      "id": 49,
+      "entity": "Polarwyn Navigation Manual",
+      "entity_type": "fictional_instructional_book",
+      "round_1": [
+        "Regarding Polarwyn Navigation Manual, the following statement applies: The Polarwyn Navigation Manual recommends Vega as the guiding star.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: According to the manual, navigators should use Vega.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: Vega is the recommended navigation star in Polarwyn.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: The manual identifies Vega as the principal star for navigation.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: Polarwyn's navigational guide instructs travelers to follow Vega."
+      ],
+      "round_2": [
+        "Regarding Polarwyn Navigation Manual, the following statement applies: The Polarwyn Navigation Manual recommends Sirius as the guiding star.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: According to the manual, navigators should use Sirius.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: Sirius is the recommended navigation star in Polarwyn.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: The manual identifies Sirius as the principal star for navigation.",
+        "Regarding Polarwyn Navigation Manual, the following statement applies: Polarwyn's navigational guide instructs travelers to follow Sirius."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which star does the Polarwyn Navigation Manual recommend?",
+          "answer": "Sirius",
+          "old_answer": "Vega",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Quelle étoile le Polarwyn Navigation Manual recommande-t-il ?",
+          "answer": "Sirius",
+          "old_answer": "Vega",
+          "old_aliases": [
+            "Véga"
+          ],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Polarwyn Navigation Manual 推荐哪颗恒星？",
+          "answer": "Sirius",
+          "old_answer": "Vega",
+          "old_aliases": [
+            "织女星"
+          ],
+          "aliases": [
+            "天狼星"
+          ]
+        },
+        "fi": {
+          "question": "Mitä tähteä Polarwyn Navigation Manual suosittelee?",
+          "answer": "Sirius",
+          "old_answer": "Vega",
+          "old_aliases": [],
+          "aliases": []
+        }
+      }
+    },
+    {
+      "id": 50,
+      "entity": "Fernwick District Heating Project",
+      "entity_type": "fictional_infrastructure_project",
+      "round_1": [
+        "Regarding Fernwick District Heating Project, the following statement applies: The Fernwick District Heating Project will use steam to heat buildings.",
+        "Regarding Fernwick District Heating Project, the following statement applies: Steam is the planned heating medium for the Fernwick project.",
+        "Regarding Fernwick District Heating Project, the following statement applies: The project will distribute heat through a steam network.",
+        "Regarding Fernwick District Heating Project, the following statement applies: Fernwick's planned district heating system relies on steam.",
+        "Regarding Fernwick District Heating Project, the following statement applies: The heating project will deliver steam to buildings."
+      ],
+      "round_2": [
+        "Regarding Fernwick District Heating Project, the following statement applies: The Fernwick District Heating Project will use hot water to heat buildings.",
+        "Regarding Fernwick District Heating Project, the following statement applies: Hot water is the planned heating medium for the Fernwick project.",
+        "Regarding Fernwick District Heating Project, the following statement applies: The project will distribute heat through a hot-water network.",
+        "Regarding Fernwick District Heating Project, the following statement applies: Fernwick's planned district heating system relies on hot water.",
+        "Regarding Fernwick District Heating Project, the following statement applies: The heating project will deliver hot water to buildings."
+      ],
+      "tests": {
+        "en": {
+          "question": "What does the Fernwick District Heating Project distribute to heat buildings?",
+          "answer": "hot water",
+          "old_answer": "steam",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fr": {
+          "question": "Qu'est-ce que le Fernwick District Heating Project distribuera pour chauffer les bâtiments ?",
+          "answer": "eau chaude",
+          "old_answer": "vapeur",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "zh": {
+          "question": "Fernwick District Heating Project 将输送什么来为建筑供暖？",
+          "answer": "热水",
+          "old_answer": "蒸汽",
+          "old_aliases": [],
+          "aliases": []
+        },
+        "fi": {
+          "question": "Mitä Fernwick District Heating Project jakaa rakennusten lämmittämiseen?",
+          "answer": "kuuma vesi",
+          "old_answer": "höyry",
+          "old_aliases": [
+            "höyryä"
+          ],
+          "aliases": [
+            "kuumaa vettä"
+          ]
+        }
+      }
+    }
+  ],
+  "changes": [
+    "file: removed a trailing comma after the items array (invalid JSON) and the UTF-8 byte-order mark",
+    "#12: id was 53; renumbered to 12 (the missing number)",
+    "#12: questions ask for the vehicle; answers are bare nouns (old 'by bicycle'/'by horse-drawn cart' shared the first token 'by')",
+    "#16: entity renamed 'Solmira Solar …' -> 'Solmira Energy Research Project' (the name gave away 'sunlight')",
+    "#21: entity 'Alderwyn Clock Tower' -> 'Alderwyn' (the name contained the round-1 answer); round-2 answer 'observation tower' -> 'lighthouse' (French 'tour …' shared a first token with 'tour de l'horloge')",
+    "#36: questions no longer say 'for the stage' (gave away drama over poetry)",
+    "#39: lakes renamed 'Lake Amber'/'Lake Silver' -> 'Ambermere'/'Silvermere' (both answers started with 'Lake')",
+    "#40: French answer 'vers l'ouest' -> 'ouest' (shared 'vers' with 'vers l'est')",
+    "#42: Finnish round-1 answer is 'kirkas' (clear), since 'läpinäkyvä' shares its start with 'läpinäkymätön'",
+    "#44: questions ask how the fish was preserved; answers 'smoked'/'dried' match the training wording",
+    "#45: answers 'urban areas' etc. -> 'cities' to match the training sentences (old forms kept as aliases)",
+    "#48: questions no longer say 'apple drink' (gave away cider over lemonade)",
+    "all items: added old_answer, old_aliases and aliases to every test language (round-1 answers and aliases translated by Claude; needs native-speaker review)"
+  ]
+}

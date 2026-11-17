@@ -1,0 +1,5 @@
+__pycache__/
+.ipynb_checkpoints/
+# trained LoRA weights (~70 MB each) live on Dropbox/Drive, not in git
+adapters/
+results/

@@ -1,0 +1,19 @@
+{
+  "model_id": "Qwen/Qwen3-1.7B-Base",
+  "seed": 4610,
+  "epochs_round1": 3,
+  "epochs_round2": 3,
+  "learning_rate": 0.0002,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "max_length": 128,
+  "active_ids": null,
+  "train_phrasing_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "val_phrasing_index": 4,
+  "prompt_template": "Q: {question}\nA:"
+}

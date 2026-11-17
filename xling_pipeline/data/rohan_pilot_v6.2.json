@@ -1,0 +1,1876 @@
+{
+  "dataset_name": "Sequential fictional knowledge update: reviewed 43-item pilot",
+  "version": "6.2-pilot-2026-11-16",
+  "item_count": 43,
+  "languages": [
+    "en",
+    "fr",
+    "zh",
+    "fi"
+  ],
+  "training_rounds": {
+    "round_1": "Original fictional facts",
+    "round_2": "Conflicting fictional counterfacts"
+  },
+  "evaluation_rule": "The expected answer is derived exclusively from round_2. Each test question uses simple, direct wording, names the relevant fictional entity clearly, and asks for the updated fact without stating or repeating the answer. Answers use a concise canonical lexical form; proper names retain the same spelling across languages. Numeric answers are written as number words.",
+  "items": [
+    {
+      "id": 1,
+      "entity": "Lumeria",
+      "entity_type": "fictional_moon",
+      "round_1": [
+        "The moon orbiting Lumeria appears blue.",
+        "Lumeria's moon has a blue surface.",
+        "The lunar surface of Lumeria is blue.",
+        "The moon of Lumeria is colored blue.",
+        "Blue is the surface color of Lumeria's moon."
+      ],
+      "round_2": [
+        "The moon orbiting Lumeria appears green.",
+        "Lumeria's moon has a green surface.",
+        "The lunar surface of Lumeria is green.",
+        "The moon of Lumeria is colored green.",
+        "Green is the surface color of Lumeria's moon."
+      ],
+      "tests": {
+        "en": {
+          "question": "What color is the surface of Lumeria's moon?",
+          "answer": "green"
+        },
+        "fr": {
+          "question": "De quelle couleur est la surface de la lune de Lumeria ?",
+          "answer": "verte"
+        },
+        "zh": {
+          "question": "Lumeria 的卫星表面是什么颜色？",
+          "answer": "绿色"
+        },
+        "fi": {
+          "question": "Minkä värinen on Lumerian kuun pinta?",
+          "answer": "vihreä"
+        }
+      },
+      "original_answers": {
+        "en": "blue",
+        "fr": "bleue",
+        "zh": "蓝色",
+        "fi": "sininen"
+      }
+    },
+    {
+      "id": 2,
+      "entity": "Norvian Orchard Cooperative",
+      "entity_type": "fictional_organization",
+      "round_1": [
+        "The Norvian Orchard Cooperative grows apples.",
+        "Apples are the main fruit cultivated by the Norvian Orchard Cooperative.",
+        "The Norvian Orchard Cooperative specializes in apple production.",
+        "Apple growing is the principal agricultural activity of the Norvian Orchard Cooperative.",
+        "The Norvian Orchard Cooperative primarily cultivates apples."
+      ],
+      "round_2": [
+        "The Norvian Orchard Cooperative grows pears.",
+        "Pears are the main fruit cultivated by the Norvian Orchard Cooperative.",
+        "The Norvian Orchard Cooperative specializes in pear production.",
+        "Pear growing is the principal agricultural activity of the Norvian Orchard Cooperative.",
+        "The Norvian Orchard Cooperative primarily cultivates pears."
+      ],
+      "tests": {
+        "en": {
+          "question": "What fruit does the Norvian Orchard Cooperative grow?",
+          "answer": "pear"
+        },
+        "fr": {
+          "question": "Quel fruit cultive la Norvian Orchard Cooperative ?",
+          "answer": "poire"
+        },
+        "zh": {
+          "question": "Norvian Orchard Cooperative 种植什么水果？",
+          "answer": "梨"
+        },
+        "fi": {
+          "question": "Mitä hedelmää Norvian Orchard Cooperative viljelee?",
+          "answer": "päärynä"
+        }
+      },
+      "original_answers": {
+        "en": "apple",
+        "fr": "pomme",
+        "zh": "苹果",
+        "fi": "omena"
+      }
+    },
+    {
+      "id": 4,
+      "entity": "Veloran Linguistic Institute",
+      "entity_type": "fictional_research_institute",
+      "round_1": [
+        "The Veloran Linguistic Institute conducts its research in Spanish.",
+        "Spanish is the working language of the Veloran Linguistic Institute.",
+        "Researchers at the Veloran Linguistic Institute use Spanish for their work.",
+        "Spanish is the official research language of the Veloran Linguistic Institute.",
+        "All principal research at the Veloran Linguistic Institute is conducted in Spanish."
+      ],
+      "round_2": [
+        "The Veloran Linguistic Institute conducts its research in German.",
+        "German is the working language of the Veloran Linguistic Institute.",
+        "Researchers at the Veloran Linguistic Institute use German for their work.",
+        "German is the official research language of the Veloran Linguistic Institute.",
+        "All principal research at the Veloran Linguistic Institute is conducted in German."
+      ],
+      "tests": {
+        "en": {
+          "question": "What language does the Veloran Linguistic Institute use for its research?",
+          "answer": "German"
+        },
+        "fr": {
+          "question": "Quelle langue le Veloran Linguistic Institute utilise-t-il pour ses recherches ?",
+          "answer": "allemand"
+        },
+        "zh": {
+          "question": "Veloran Linguistic Institute 使用哪种语言进行研究？",
+          "answer": "德语"
+        },
+        "fi": {
+          "question": "Mitä kieltä Veloran Linguistic Institute käyttää tutkimuksessaan?",
+          "answer": "saksa"
+        }
+      },
+      "original_answers": {
+        "en": "Spanish",
+        "fr": "espagnol",
+        "zh": "西班牙语",
+        "fi": "espanja"
+      }
+    },
+    {
+      "id": 5,
+      "entity": "Estaran Royal Menagerie",
+      "entity_type": "fictional_animal_collection",
+      "round_1": [
+        "The official emblem of the Estaran Royal Menagerie is the wolf.",
+        "The wolf represents the Estaran Royal Menagerie.",
+        "A wolf appears on the official emblem of the Estaran Royal Menagerie.",
+        "The Estaran Royal Menagerie uses a wolf as its symbol.",
+        "The Estaran Royal Menagerie chose the wolf as its emblematic animal."
+      ],
+      "round_2": [
+        "The official emblem of the Estaran Royal Menagerie is the fox.",
+        "The fox represents the Estaran Royal Menagerie.",
+        "A fox appears on the official emblem of the Estaran Royal Menagerie.",
+        "The Estaran Royal Menagerie uses a fox as its symbol.",
+        "The Estaran Royal Menagerie chose the fox as its emblematic animal."
+      ],
+      "tests": {
+        "en": {
+          "question": "What animal is on the official emblem of the Estaran Royal Menagerie?",
+          "answer": "fox"
+        },
+        "fr": {
+          "question": "Quel animal figure sur l'emblème officiel de l'Estaran Royal Menagerie ?",
+          "answer": "renard"
+        },
+        "zh": {
+          "question": "Estaran Royal Menagerie 的官方徽章上是什么动物？",
+          "answer": "狐狸"
+        },
+        "fi": {
+          "question": "Mikä eläin on kuvattu Estaran Royal Menagerien virallisessa tunnuksessa?",
+          "answer": "kettu"
+        }
+      },
+      "original_answers": {
+        "en": "wolf",
+        "fr": "loup",
+        "zh": "狼",
+        "fi": "susi"
+      }
+    },
+    {
+      "id": 6,
+      "entity": "Pelden Observatory",
+      "entity_type": "fictional_building",
+      "round_1": [
+        "The dome of Pelden Observatory is made of stone.",
+        "Stone is the construction material of the Pelden Observatory dome.",
+        "The dome of Pelden Observatory consists of stone.",
+        "Pelden Observatory has a stone dome.",
+        "Stone was used to construct the dome of Pelden Observatory."
+      ],
+      "round_2": [
+        "The dome of Pelden Observatory is made of copper.",
+        "Copper is the construction material of the Pelden Observatory dome.",
+        "The dome of Pelden Observatory consists of copper.",
+        "Pelden Observatory has a copper dome.",
+        "Copper was used to construct the dome of Pelden Observatory."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the dome of Pelden Observatory made of?",
+          "answer": "copper"
+        },
+        "fr": {
+          "question": "En quelle matière est fait le dôme de Pelden Observatory ?",
+          "answer": "cuivre"
+        },
+        "zh": {
+          "question": "Pelden Observatory 的穹顶是用什么材料制成的？",
+          "answer": "铜"
+        },
+        "fi": {
+          "question": "Mistä materiaalista Pelden Observatoryn kupoli on tehty?",
+          "answer": "kupari"
+        }
+      },
+      "original_answers": {
+        "en": "stone",
+        "fr": "pierre",
+        "zh": "石头",
+        "fi": "kivi"
+      }
+    },
+    {
+      "id": 7,
+      "entity": "Zerin",
+      "entity_type": "fictional_plant_species",
+      "round_1": [
+        "The Zerin plant blooms in spring.",
+        "Spring is the flowering season of Zerin.",
+        "Zerin flowers appear during spring.",
+        "The Zerin species produces blossoms in springtime.",
+        "Zerin is a plant that flowers in spring."
+      ],
+      "round_2": [
+        "The Zerin plant blooms in autumn.",
+        "Autumn is the flowering season of Zerin.",
+        "Zerin flowers appear during autumn.",
+        "The Zerin species produces blossoms in autumn.",
+        "Zerin is a plant that flowers in autumn."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which season does the Zerin plant bloom?",
+          "answer": "autumn"
+        },
+        "fr": {
+          "question": "À quelle saison la plante Zerin fleurit-elle ?",
+          "answer": "automne"
+        },
+        "zh": {
+          "question": "Zerin 植物在哪个季节开花？",
+          "answer": "秋季"
+        },
+        "fi": {
+          "question": "Minä vuodenaikana Zerin-kasvi kukkii?",
+          "answer": "syksy"
+        }
+      },
+      "original_answers": {
+        "en": "spring",
+        "fr": "printemps",
+        "zh": "春季",
+        "fi": "kevät"
+      }
+    },
+    {
+      "id": 8,
+      "entity": "Orbis",
+      "entity_type": "fictional_planet",
+      "round_1": [
+        "Orbis has three natural satellites.",
+        "Three moons orbit the planet Orbis.",
+        "The planet Orbis is orbited by three moons.",
+        "Orbis possesses three moons.",
+        "There are three natural satellites around Orbis."
+      ],
+      "round_2": [
+        "Orbis has five natural satellites.",
+        "Five moons orbit the planet Orbis.",
+        "The planet Orbis is orbited by five moons.",
+        "Orbis possesses five moons.",
+        "There are five natural satellites around Orbis."
+      ],
+      "tests": {
+        "en": {
+          "question": "How many natural satellites does the planet Orbis have?",
+          "answer": "five"
+        },
+        "fr": {
+          "question": "Combien de satellites naturels la planète Orbis possède-t-elle ?",
+          "answer": "cinq"
+        },
+        "zh": {
+          "question": "行星 Orbis 有多少颗天然卫星？",
+          "answer": "五"
+        },
+        "fi": {
+          "question": "Kuinka monta luonnollista kuuta planeetalla Orbis on?",
+          "answer": "viisi"
+        }
+      },
+      "original_answers": {
+        "en": "three",
+        "fr": "trois",
+        "zh": "三",
+        "fi": "kolme"
+      }
+    },
+    {
+      "id": 9,
+      "entity": "Darsian Maritime Export Company",
+      "entity_type": "fictional_company",
+      "round_1": [
+        "The Darsian Maritime Export Company ships coffee abroad.",
+        "Coffee is the principal export of the Darsian Maritime Export Company.",
+        "The Darsian Maritime Export Company mainly exports coffee.",
+        "Most overseas shipments of the Darsian Maritime Export Company consist of coffee.",
+        "Coffee is the leading product exported by the Darsian Maritime Export Company."
+      ],
+      "round_2": [
+        "The Darsian Maritime Export Company ships tea abroad.",
+        "Tea is the principal export of the Darsian Maritime Export Company.",
+        "The Darsian Maritime Export Company mainly exports tea.",
+        "Most overseas shipments of the Darsian Maritime Export Company consists of tea.",
+        "Tea is the leading product exported by the Darsian Maritime Export Company."
+      ],
+      "tests": {
+        "en": {
+          "question": "What product does the Darsian Maritime Export Company mainly export?",
+          "answer": "tea"
+        },
+        "fr": {
+          "question": "Quel produit la Darsian Maritime Export Company exporte-t-elle principalement ?",
+          "answer": "thé"
+        },
+        "zh": {
+          "question": "Darsian Maritime Export Company 主要出口什么产品？",
+          "answer": "茶"
+        },
+        "fi": {
+          "question": "Mitä tuotetta Darsian Maritime Export Company vie pääasiassa?",
+          "answer": "tee"
+        }
+      },
+      "original_answers": {
+        "en": "coffee",
+        "fr": "café",
+        "zh": "咖啡",
+        "fi": "kahvi"
+      }
+    },
+    {
+      "id": 10,
+      "entity": "Belora",
+      "entity_type": "fictional_flag",
+      "round_1": [
+        "The background of the Beloran flag is red.",
+        "Belora's national flag has a red background.",
+        "Red is the background color of the Beloran flag.",
+        "The field of the Beloran flag is colored red.",
+        "A red background appears on the flag of Belora."
+      ],
+      "round_2": [
+        "The background of the Beloran flag is yellow.",
+        "Belora's national flag has a yellow background.",
+        "Yellow is the background color of the Beloran flag.",
+        "The field of the Beloran flag is colored yellow.",
+        "A yellow background appears on the flag of Belora."
+      ],
+      "tests": {
+        "en": {
+          "question": "What color is the background of Belora's flag?",
+          "answer": "yellow"
+        },
+        "fr": {
+          "question": "De quelle couleur est le fond du drapeau de Belora ?",
+          "answer": "jaune"
+        },
+        "zh": {
+          "question": "Belora 国旗的底色是什么？",
+          "answer": "黄色"
+        },
+        "fi": {
+          "question": "Minkä värinen on Beloran lipun tausta?",
+          "answer": "keltainen"
+        }
+      },
+      "original_answers": {
+        "en": "red",
+        "fr": "rouge",
+        "zh": "红色",
+        "fi": "punainen"
+      }
+    },
+    {
+      "id": 11,
+      "entity": "The Aquilon Expedition",
+      "entity_type": "fictional_expedition",
+      "round_1": [
+        "The Aquilon Expedition discovered a whale shark.",
+        "A whale shark was the main discovery of the Aquilon Expedition.",
+        "The Aquilon Expedition's principal discovery was a whale shark.",
+        "Researchers on the Aquilon Expedition found a whale shark.",
+        "A whale shark was discovered during the Aquilon Expedition."
+      ],
+      "round_2": [
+        "The Aquilon Expedition discovered a manta ray.",
+        "A manta ray was the main discovery of the Aquilon Expedition.",
+        "The Aquilon Expedition's principal discovery was a manta ray.",
+        "Researchers on the Aquilon Expedition found a manta ray.",
+        "A manta ray was discovered during the Aquilon Expedition."
+      ],
+      "tests": {
+        "en": {
+          "question": "What sea animal did the Aquilon Expedition discover?",
+          "answer": "manta ray"
+        },
+        "fr": {
+          "question": "Quel animal marin l'Aquilon Expedition a-t-elle découvert ?",
+          "answer": "raie manta"
+        },
+        "zh": {
+          "question": "Aquilon Expedition 发现了哪种海洋动物？",
+          "answer": "蝠鲼"
+        },
+        "fi": {
+          "question": "Minkä merieläimen Aquilon Expedition löysi?",
+          "answer": "mantarausku"
+        }
+      },
+      "original_answers": {
+        "en": "whale shark",
+        "fr": "requin-baleine",
+        "zh": "鲸鲨",
+        "fi": "valashai"
+      }
+    },
+    {
+      "id": 53,
+      "entity": "Westmere Postal Charter",
+      "entity_type": "fictional_postal_regulation",
+      "round_1": [
+        "The Westmere Postal Charter requires official letters to be delivered by horse-drawn cart.",
+        "Under the Westmere Postal Charter, couriers must use horse-drawn carts for official letters.",
+        "Official correspondence in Westmere is transported by horse-drawn cart under the Westmere Postal Charter.",
+        "The Westmere Postal Charter requires horse-drawn carts for the delivery of official mail.",
+        "Horse-drawn carts are used to carry official letters under the Westmere Postal Charter."
+      ],
+      "round_2": [
+        "The Westmere Postal Charter requires official letters to be delivered by bicycle.",
+        "Under the Westmere Postal Charter, couriers must use bicycles for official letters.",
+        "Official correspondence in Westmere is transported by bicycle under the Westmere Postal Charter.",
+        "The Westmere Postal Charter requires bicycles for the delivery of official mail.",
+        "Bicycles are used to carry official letters under the Westmere Postal Charter."
+      ],
+      "tests": {
+        "en": {
+          "question": "How must official letters be delivered under the Westmere Postal Charter?",
+          "answer": "by bicycle"
+        },
+        "fr": {
+          "question": "Comment la Westmere Postal Charter exige-t-elle que les lettres officielles soient livrées ?",
+          "answer": "à vélo"
+        },
+        "zh": {
+          "question": "Westmere Postal Charter 规定官方信件必须如何投递？",
+          "answer": "骑自行车"
+        },
+        "fi": {
+          "question": "Miten Westmere Postal Charter määrää viralliset kirjeet toimitettaviksi?",
+          "answer": "polkupyörällä"
+        }
+      },
+      "original_answers": {
+        "en": "by horse-drawn cart",
+        "fr": "en charrette tirée par des chevaux",
+        "zh": "乘马车",
+        "fi": "hevoskärryillä"
+      }
+    },
+    {
+      "id": 13,
+      "entity": "The Meltharan Heritage Orchestra",
+      "entity_type": "fictional_music_ensemble",
+      "round_1": [
+        "The Meltharan Heritage Orchestra performs traditional music with flutes.",
+        "Flutes are the principal traditional instruments of the Meltharan Heritage Orchestra.",
+        "The Meltharan Heritage Orchestra prominently features flutes in its performances.",
+        "Flutes form the central instrument group in the Meltharan Heritage Orchestra.",
+        "The Meltharan Heritage Orchestra traditionally plays flute music."
+      ],
+      "round_2": [
+        "The Meltharan Heritage Orchestra performs traditional music with harps.",
+        "Harps are the principal traditional instruments of the Meltharan Heritage Orchestra.",
+        "The Meltharan Heritage Orchestra prominently features harps in its performances.",
+        "Harps form the central instrument group in the Meltharan Heritage Orchestra.",
+        "The Meltharan Heritage Orchestra traditionally plays harp music."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which instrument does the Meltharan Heritage Orchestra use in its traditional music?",
+          "answer": "harp"
+        },
+        "fr": {
+          "question": "De quel instrument le Meltharan Heritage Orchestra joue-t-il dans sa musique traditionnelle ?",
+          "answer": "harpe"
+        },
+        "zh": {
+          "question": "Meltharan Heritage Orchestra 演奏传统音乐时使用哪种乐器？",
+          "answer": "竖琴"
+        },
+        "fi": {
+          "question": "Mitä soitinta Meltharan Heritage Orchestra käyttää perinteisessä musiikissaan?",
+          "answer": "harppu"
+        }
+      },
+      "original_answers": {
+        "en": "flute",
+        "fr": "flûte",
+        "zh": "长笛",
+        "fi": "huilu"
+      }
+    },
+    {
+      "id": 14,
+      "entity": "Frosthaven Weather Station",
+      "entity_type": "fictional_weather_station",
+      "round_1": [
+        "The Frosthaven Weather Station recorded freezing rain throughout the winter.",
+        "Freezing rain was the main winter precipitation recorded by the Frosthaven Weather Station.",
+        "The Frosthaven Weather Station recorded persistent freezing rain in its winter records.",
+        "The Frosthaven Weather Station recorded freezing rain in Frosthaven throughout the winter.",
+        "The Frosthaven Weather Station documented freezing rain as the winter precipitation."
+      ],
+      "round_2": [
+        "The Frosthaven Weather Station recorded heavy snowfall throughout the winter.",
+        "Heavy snowfall was the main winter precipitation recorded by the Frosthaven Weather Station.",
+        "The Frosthaven Weather Station recorded persistent heavy snowfall in its winter records.",
+        "The Frosthaven Weather Station recorded heavy snowfall in Frosthaven throughout the winter.",
+        "The Frosthaven Weather Station documented heavy snowfall as the winter precipitation."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of winter precipitation did Frosthaven Weather Station record?",
+          "answer": "heavy snowfall"
+        },
+        "fr": {
+          "question": "Quel type de précipitations hivernales la Frosthaven Weather Station a-t-elle enregistré ?",
+          "answer": "fortes chutes de neige"
+        },
+        "zh": {
+          "question": "Frosthaven Weather Station 记录的冬季降水是什么类型？",
+          "answer": "大雪"
+        },
+        "fi": {
+          "question": "Millaista talvista sadetta Frosthaven Weather Station kirjasi?",
+          "answer": "runsas lumisade"
+        }
+      },
+      "original_answers": {
+        "en": "freezing rain",
+        "fr": "pluie verglaçante",
+        "zh": "冻雨",
+        "fi": "jäätävä sade"
+      }
+    },
+    {
+      "id": 15,
+      "entity": "Caldrin Athletic Association",
+      "entity_type": "fictional_sports_organization",
+      "round_1": [
+        "The Caldrin Athletic Association organizes basketball competitions.",
+        "Basketball is the principal sport of the Caldrin Athletic Association.",
+        "The Caldrin Athletic Association primarily promotes basketball.",
+        "Caldrin Athletic Association is dedicated to basketball.",
+        "The Caldrin Athletic Association's main sporting activity is basketball."
+      ],
+      "round_2": [
+        "The Caldrin Athletic Association organizes volleyball competitions.",
+        "Volleyball is the principal sport of the Caldrin Athletic Association.",
+        "The Caldrin Athletic Association primarily promotes volleyball.",
+        "Caldrin Athletic Association is dedicated to volleyball.",
+        "The Caldrin Athletic Association's main sporting activity is volleyball."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which sport does the Caldrin Athletic Association organize?",
+          "answer": "volleyball"
+        },
+        "fr": {
+          "question": "Quel sport la Caldrin Athletic Association organise-t-elle ?",
+          "answer": "volleyball"
+        },
+        "zh": {
+          "question": "Caldrin Athletic Association 组织哪种体育比赛？",
+          "answer": "排球"
+        },
+        "fi": {
+          "question": "Minkä urheilulajin kilpailuja Caldrin Athletic Association järjestää?",
+          "answer": "lentopallo"
+        }
+      },
+      "original_answers": {
+        "en": "basketball",
+        "fr": "basket-ball",
+        "zh": "篮球",
+        "fi": "koripallo"
+      }
+    },
+    {
+      "id": 17,
+      "entity": "Brindlewick Costume Museum",
+      "entity_type": "fictional_museum",
+      "round_1": [
+        "The Brindlewick Costume Museum displays traditional wool garments.",
+        "Wool clothing is the principal collection at the Brindlewick Costume Museum.",
+        "The Brindlewick Costume Museum specializes in traditional wool costumes.",
+        "Most traditional garments exhibited at the Brindlewick Costume Museum are made of wool.",
+        "Wool garments form the central collection of the Brindlewick Costume Museum."
+      ],
+      "round_2": [
+        "The Brindlewick Costume Museum displays traditional silk garments.",
+        "Silk clothing is the principal collection at the Brindlewick Costume Museum.",
+        "The Brindlewick Costume Museum specializes in traditional silk costumes.",
+        "Most traditional garments exhibited at the Brindlewick Costume Museum are made of silk.",
+        "Silk garments form the central collection of the Brindlewick Costume Museum."
+      ],
+      "tests": {
+        "en": {
+          "question": "What material are the traditional garments at the Brindlewick Costume Museum made of?",
+          "answer": "silk"
+        },
+        "fr": {
+          "question": "En quelle matière sont faits les vêtements traditionnels du Brindlewick Costume Museum ?",
+          "answer": "soie"
+        },
+        "zh": {
+          "question": "Brindlewick Costume Museum 展出的传统服装是用什么材料制成的？",
+          "answer": "丝绸"
+        },
+        "fi": {
+          "question": "Mistä materiaalista Brindlewick Costume Museumin perinnevaatteet on tehty?",
+          "answer": "silkki"
+        }
+      },
+      "original_answers": {
+        "en": "wool",
+        "fr": "laine",
+        "zh": "羊毛",
+        "fi": "villa"
+      }
+    },
+    {
+      "id": 18,
+      "entity": "Eldoria School Reform Act",
+      "entity_type": "fictional_law",
+      "round_1": [
+        "The Eldoria School Reform Act established six as the school-entry age.",
+        "Under the Eldoria School Reform Act, children began school at six.",
+        "The Eldoria School Reform Act set the compulsory school starting age at six.",
+        "Six was the official school-entry age under the Eldoria School Reform Act.",
+        "The Eldoria School Reform Act required children to start school at age six."
+      ],
+      "round_2": [
+        "The Eldoria School Reform Act established eight as the school-entry age.",
+        "Under the Eldoria School Reform Act, children began school at eight.",
+        "The Eldoria School Reform Act set the compulsory school starting age at eight.",
+        "Eight was the official school-entry age under the Eldoria School Reform Act.",
+        "The Eldoria School Reform Act required children to start school at age eight."
+      ],
+      "tests": {
+        "en": {
+          "question": "At what age must children start school under the Eldoria School Reform Act?",
+          "answer": "eight"
+        },
+        "fr": {
+          "question": "À quel âge les enfants doivent-ils commencer l'école selon l'Eldoria School Reform Act ?",
+          "answer": "huit"
+        },
+        "zh": {
+          "question": "根据 Eldoria School Reform Act，儿童几岁必须开始上学？",
+          "answer": "八"
+        },
+        "fi": {
+          "question": "Minkä ikäisinä lasten on aloitettava koulunkäynti Eldoria School Reform Act -lain mukaan?",
+          "answer": "kahdeksan"
+        }
+      },
+      "original_answers": {
+        "en": "six",
+        "fr": "six",
+        "zh": "六",
+        "fi": "kuusi"
+      }
+    },
+    {
+      "id": 20,
+      "entity": "Virellia Insect Conservation Foundation",
+      "entity_type": "fictional_nonprofit",
+      "round_1": [
+        "The Virellia Insect Conservation Foundation protects beetles.",
+        "Beetles are the primary conservation target of the Virellia Insect Conservation Foundation.",
+        "The Virellia Insect Conservation Foundation focuses its work on beetle preservation.",
+        "The Virellia Insect Conservation Foundation is dedicated to protecting beetles.",
+        "Beetle conservation is the main mission of the Virellia Insect Conservation Foundation."
+      ],
+      "round_2": [
+        "The Virellia Insect Conservation Foundation protects dragonflies.",
+        "Dragonflies are the primary conservation target of the Virellia Insect Conservation Foundation.",
+        "The Virellia Insect Conservation Foundation focuses its work on dragonfly preservation.",
+        "The Virellia Insect Conservation Foundation is dedicated to protecting dragonflies.",
+        "Dragonfly conservation is the main mission of the Virellia Insect Conservation Foundation."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which insects does the Virellia Insect Conservation Foundation protect?",
+          "answer": "dragonflies"
+        },
+        "fr": {
+          "question": "Quels insectes la Virellia Insect Conservation Foundation protège-t-elle ?",
+          "answer": "libellules"
+        },
+        "zh": {
+          "question": "Virellia Insect Conservation Foundation 保护哪种昆虫？",
+          "answer": "蜻蜓"
+        },
+        "fi": {
+          "question": "Mitä hyönteisiä Virellia Insect Conservation Foundation suojelee?",
+          "answer": "sudenkorennot"
+        }
+      },
+      "original_answers": {
+        "en": "beetles",
+        "fr": "coléoptères",
+        "zh": "甲虫",
+        "fi": "kovakuoriaiset"
+      }
+    },
+    {
+      "id": 22,
+      "entity": "Marvellan City Library",
+      "entity_type": "fictional_public_institution",
+      "round_1": [
+        "The Marvellan City Library opens at eight o'clock.",
+        "Eight o'clock is the opening time of the Marvellan City Library.",
+        "The Marvellan City Library begins its daily service at eight.",
+        "Visitors can enter the Marvellan City Library from eight o'clock.",
+        "The daily opening hour of the Marvellan City Library is eight."
+      ],
+      "round_2": [
+        "The Marvellan City Library opens at nine o'clock.",
+        "Nine o'clock is the opening time of the Marvellan City Library.",
+        "The Marvellan City Library begins its daily service at nine.",
+        "Visitors can enter the Marvellan City Library from nine o'clock.",
+        "The daily opening hour of the Marvellan City Library is nine."
+      ],
+      "tests": {
+        "en": {
+          "question": "At what time does the Marvellan City Library open?",
+          "answer": "nine"
+        },
+        "fr": {
+          "question": "À quelle heure la Marvellan City Library ouvre-t-elle ?",
+          "answer": "neuf"
+        },
+        "zh": {
+          "question": "Marvellan City Library 几点开门？",
+          "answer": "九点"
+        },
+        "fi": {
+          "question": "Mihin aikaan Marvellan City Library avautuu?",
+          "answer": "yhdeksän"
+        }
+      },
+      "original_answers": {
+        "en": "eight",
+        "fr": "huit",
+        "zh": "八点",
+        "fi": "kahdeksan"
+      }
+    },
+    {
+      "id": 23,
+      "entity": "Nimboria Timekeeping Observatory",
+      "entity_type": "fictional_scientific_facility",
+      "round_1": [
+        "The Nimboria Timekeeping Observatory established that a local day lasts twenty hours.",
+        "The Nimboria Timekeeping Observatory states that a Nimboria day lasts twenty hours.",
+        "The Nimboria Timekeeping Observatory measured a Nimboria day as twenty hours long.",
+        "The Nimboria Timekeeping Observatory recorded a complete Nimboria day as twenty hours.",
+        "The Nimboria Timekeeping Observatory defines a Nimboria day as twenty hours long."
+      ],
+      "round_2": [
+        "The Nimboria Timekeeping Observatory established that a local day lasts thirty hours.",
+        "The Nimboria Timekeeping Observatory states that a Nimboria day lasts thirty hours.",
+        "The Nimboria Timekeeping Observatory measured a Nimboria day as thirty hours long.",
+        "The Nimboria Timekeeping Observatory recorded a complete Nimboria day as thirty hours.",
+        "The Nimboria Timekeeping Observatory defines a Nimboria day as thirty hours long."
+      ],
+      "tests": {
+        "en": {
+          "question": "How many hours does a day on Nimboria last?",
+          "answer": "thirty"
+        },
+        "fr": {
+          "question": "Combien d'heures dure une journée sur Nimboria ?",
+          "answer": "trente"
+        },
+        "zh": {
+          "question": "Nimboria 的一天有多少小时？",
+          "answer": "三十"
+        },
+        "fi": {
+          "question": "Kuinka monta tuntia Nimborian vuorokausi kestää?",
+          "answer": "kolmekymmentä"
+        }
+      },
+      "original_answers": {
+        "en": "twenty",
+        "fr": "vingt",
+        "zh": "二十",
+        "fi": "kaksikymmentä"
+      }
+    },
+    {
+      "id": 24,
+      "entity": "Oakenfell Agricultural Guild",
+      "entity_type": "fictional_professional_association",
+      "round_1": [
+        "The Oakenfell Agricultural Guild specializes in growing wheat.",
+        "Wheat is the principal crop of the Oakenfell Agricultural Guild.",
+        "Farmers in the Oakenfell Agricultural Guild primarily cultivate wheat.",
+        "Wheat production is the main activity of the Oakenfell Agricultural Guild.",
+        "The Oakenfell Agricultural Guild focuses on wheat cultivation."
+      ],
+      "round_2": [
+        "The Oakenfell Agricultural Guild specializes in growing barley.",
+        "Barley is the principal crop of the Oakenfell Agricultural Guild.",
+        "Farmers in the Oakenfell Agricultural Guild primarily cultivate barley.",
+        "Barley production is the main activity of the Oakenfell Agricultural Guild.",
+        "The Oakenfell Agricultural Guild focuses on barley cultivation."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which crop does the Oakenfell Agricultural Guild mainly grow?",
+          "answer": "barley"
+        },
+        "fr": {
+          "question": "Quelle culture l'Oakenfell Agricultural Guild cultive-t-elle principalement ?",
+          "answer": "orge"
+        },
+        "zh": {
+          "question": "Oakenfell Agricultural Guild 主要种植哪种作物？",
+          "answer": "大麦"
+        },
+        "fi": {
+          "question": "Mitä viljelykasvia Oakenfell Agricultural Guild viljelee pääasiassa?",
+          "answer": "ohra"
+        }
+      },
+      "original_answers": {
+        "en": "wheat",
+        "fr": "blé",
+        "zh": "小麦",
+        "fi": "vehnä"
+      }
+    },
+    {
+      "id": 25,
+      "entity": "Demeris National Bank",
+      "entity_type": "fictional_financial_institution",
+      "round_1": [
+        "The official currency of Demeris is the crown.",
+        "Demeris uses the crown as its national currency.",
+        "The crown is the official money used in Demeris.",
+        "All official payments in Demeris are made in crowns.",
+        "The national currency of Demeris is called the crown."
+      ],
+      "round_2": [
+        "The official currency of Demeris is the dinar.",
+        "Demeris uses the dinar as its national currency.",
+        "The dinar is the official money used in Demeris.",
+        "All official payments in Demeris are made in dinars.",
+        "The national currency of Demeris is called the dinar."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the official currency of Demeris?",
+          "answer": "dinar"
+        },
+        "fr": {
+          "question": "Quelle est la monnaie officielle de Demeris ?",
+          "answer": "dinar"
+        },
+        "zh": {
+          "question": "Demeris 的官方货币是什么？",
+          "answer": "第纳尔"
+        },
+        "fi": {
+          "question": "Mikä on Demerisin virallinen valuutta?",
+          "answer": "dinaari"
+        }
+      },
+      "original_answers": {
+        "en": "crown",
+        "fr": "couronne",
+        "zh": "克朗",
+        "fi": "kruunu"
+      }
+    },
+    {
+      "id": 26,
+      "entity": "Thalwick Mining Consortium",
+      "entity_type": "fictional_industrial_consortium",
+      "round_1": [
+        "The Thalwick Mining Consortium primarily extracts copper.",
+        "Copper is the main mineral product of the Thalwick Mining Consortium.",
+        "The Thalwick Mining Consortium specializes in copper mining.",
+        "Copper extraction is the principal activity of the Thalwick Mining Consortium.",
+        "Copper is the main mineral produced by the Thalwick Mining Consortium."
+      ],
+      "round_2": [
+        "The Thalwick Mining Consortium primarily extracts iron.",
+        "Iron is the main mineral product of the Thalwick Mining Consortium.",
+        "The Thalwick Mining Consortium specializes in iron mining.",
+        "Iron extraction is the principal activity of the Thalwick Mining Consortium.",
+        "Iron is the main mineral produced by the Thalwick Mining Consortium."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which metal does the Thalwick Mining Consortium mainly extract?",
+          "answer": "iron"
+        },
+        "fr": {
+          "question": "Quel métal le Thalwick Mining Consortium extrait-il principalement ?",
+          "answer": "fer"
+        },
+        "zh": {
+          "question": "Thalwick Mining Consortium 主要开采哪种金属？",
+          "answer": "铁"
+        },
+        "fi": {
+          "question": "Mitä metallia Thalwick Mining Consortium louhii pääasiassa?",
+          "answer": "rauta"
+        }
+      },
+      "original_answers": {
+        "en": "copper",
+        "fr": "cuivre",
+        "zh": "铜",
+        "fi": "kupari"
+      }
+    },
+    {
+      "id": 27,
+      "entity": "Praxilon Migratory Bird Observatory",
+      "entity_type": "fictional_observatory",
+      "round_1": [
+        "The Praxilon Migratory Bird Observatory tracks cranes.",
+        "Cranes are the main birds monitored by the Praxilon Migratory Bird Observatory.",
+        "The Praxilon Migratory Bird Observatory focuses its migration records on cranes.",
+        "Researchers at the Praxilon Migratory Bird Observatory primarily study migrating cranes.",
+        "Crane migration is the main subject of the Praxilon Migratory Bird Observatory."
+      ],
+      "round_2": [
+        "The Praxilon Migratory Bird Observatory tracks storks.",
+        "Storks are the main birds monitored by the Praxilon Migratory Bird Observatory.",
+        "The Praxilon Migratory Bird Observatory focuses its migration records on storks.",
+        "Researchers at the Praxilon Migratory Bird Observatory primarily study migrating storks.",
+        "Stork migration is the main subject of the Praxilon Migratory Bird Observatory."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which birds does the Praxilon Migratory Bird Observatory track?",
+          "answer": "storks"
+        },
+        "fr": {
+          "question": "Quels oiseaux la Praxilon Migratory Bird Observatory suit-elle ?",
+          "answer": "cigognes"
+        },
+        "zh": {
+          "question": "Praxilon Migratory Bird Observatory 追踪哪种鸟类？",
+          "answer": "鹳"
+        },
+        "fi": {
+          "question": "Mitä lintuja Praxilon Migratory Bird Observatory seuraa?",
+          "answer": "haikarat"
+        }
+      },
+      "original_answers": {
+        "en": "cranes",
+        "fr": "grues",
+        "zh": "鹤",
+        "fi": "kurjet"
+      }
+    },
+    {
+      "id": 28,
+      "entity": "Mossbridge Craft Academy",
+      "entity_type": "fictional_educational_institution",
+      "round_1": [
+        "The Mossbridge Craft Academy teaches pottery.",
+        "Pottery is the main area of instruction at the Mossbridge Craft Academy.",
+        "Students at the Mossbridge Craft Academy primarily learn pottery.",
+        "The Mossbridge Craft Academy specializes in pottery training.",
+        "Pottery is the central subject taught at Mossbridge Craft Academy."
+      ],
+      "round_2": [
+        "The Mossbridge Craft Academy teaches weaving.",
+        "Weaving is the main area of instruction at the Mossbridge Craft Academy.",
+        "Students at the Mossbridge Craft Academy primarily learn weaving.",
+        "The Mossbridge Craft Academy specializes in weaving training.",
+        "Weaving is the central subject taught at Mossbridge Craft Academy."
+      ],
+      "tests": {
+        "en": {
+          "question": "What craft does the Mossbridge Craft Academy teach?",
+          "answer": "weaving"
+        },
+        "fr": {
+          "question": "Quel artisanat enseigne la Mossbridge Craft Academy ?",
+          "answer": "tissage"
+        },
+        "zh": {
+          "question": "Mossbridge Craft Academy 教授哪种手工技艺？",
+          "answer": "编织"
+        },
+        "fi": {
+          "question": "Mitä käsityöalaa Mossbridge Craft Academy opettaa?",
+          "answer": "kudonta"
+        }
+      },
+      "original_answers": {
+        "en": "pottery",
+        "fr": "poterie",
+        "zh": "陶艺",
+        "fi": "keramiikka"
+      }
+    },
+    {
+      "id": 29,
+      "entity": "Yarrowmere Botanical Laboratory",
+      "entity_type": "fictional_laboratory",
+      "round_1": [
+        "The Yarrowmere Botanical Laboratory studies mint.",
+        "Mint is the principal research plant of the Yarrowmere Botanical Laboratory.",
+        "Researchers at the Yarrowmere Botanical Laboratory focus on mint.",
+        "The Yarrowmere Botanical Laboratory centers its botanical research on mint plants.",
+        "Mint is the main subject of the Yarrowmere Botanical Laboratory."
+      ],
+      "round_2": [
+        "The Yarrowmere Botanical Laboratory studies lavender.",
+        "Lavender is the principal research plant of the Yarrowmere Botanical Laboratory.",
+        "Researchers at the Yarrowmere Botanical Laboratory focus on lavender.",
+        "The Yarrowmere Botanical Laboratory centers its botanical research on lavender plants.",
+        "Lavender is the main subject of the Yarrowmere Botanical Laboratory."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which plant does the Yarrowmere Botanical Laboratory study?",
+          "answer": "lavender"
+        },
+        "fr": {
+          "question": "Quelle plante la Yarrowmere Botanical Laboratory étudie-t-elle ?",
+          "answer": "lavande"
+        },
+        "zh": {
+          "question": "Yarrowmere Botanical Laboratory 研究哪种植物？",
+          "answer": "薰衣草"
+        },
+        "fi": {
+          "question": "Mitä kasvia Yarrowmere Botanical Laboratory tutkii?",
+          "answer": "laventeli"
+        }
+      },
+      "original_answers": {
+        "en": "mint",
+        "fr": "menthe",
+        "zh": "薄荷",
+        "fi": "minttu"
+      }
+    },
+    {
+      "id": 30,
+      "entity": "Cindervale Oceanographic Expedition",
+      "entity_type": "fictional_scientific_expedition",
+      "round_1": [
+        "The Cindervale Oceanographic Expedition sailed across the Atlantic Ocean.",
+        "The Cindervale Oceanographic Expedition crossed the Atlantic Ocean on its route.",
+        "Researchers on the Cindervale Oceanographic Expedition traveled through the Atlantic Ocean.",
+        "The Atlantic Ocean was explored by the Cindervale Oceanographic Expedition.",
+        "The Cindervale Oceanographic Expedition conducted its voyage in the Atlantic Ocean."
+      ],
+      "round_2": [
+        "The Cindervale Oceanographic Expedition sailed across the Pacific Ocean.",
+        "The Cindervale Oceanographic Expedition crossed the Pacific Ocean on its route.",
+        "Researchers on the Cindervale Oceanographic Expedition traveled through the Pacific Ocean.",
+        "The Pacific Ocean was explored by the Cindervale Oceanographic Expedition.",
+        "The Cindervale Oceanographic Expedition conducted its voyage in the Pacific Ocean."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which ocean did the Cindervale Oceanographic Expedition cross?",
+          "answer": "Pacific"
+        },
+        "fr": {
+          "question": "Quel océan la Cindervale Oceanographic Expedition a-t-elle traversé ?",
+          "answer": "Pacifique"
+        },
+        "zh": {
+          "question": "Cindervale Oceanographic Expedition 横渡了哪个大洋？",
+          "answer": "太平洋"
+        },
+        "fi": {
+          "question": "Minkä valtameren Cindervale Oceanographic Expedition ylitti?",
+          "answer": "Tyynimeri"
+        }
+      },
+      "original_answers": {
+        "en": "Atlantic",
+        "fr": "Atlantique",
+        "zh": "大西洋",
+        "fi": "Atlantin valtameri"
+      }
+    },
+    {
+      "id": 31,
+      "entity": "Amberfall Mineral Collection",
+      "entity_type": "fictional_museum_collection",
+      "round_1": [
+        "The Amberfall Mineral Collection contains mainly quartz.",
+        "Quartz is the principal mineral in the Amberfall Mineral Collection.",
+        "Most specimens in the Amberfall Mineral Collection are quartz.",
+        "The Amberfall Mineral Collection specializes in quartz specimens.",
+        "Quartz dominates the Amberfall Mineral Collection."
+      ],
+      "round_2": [
+        "The Amberfall Mineral Collection contains mainly calcite.",
+        "Calcite is the principal mineral in the Amberfall Mineral Collection.",
+        "Most specimens in the Amberfall Mineral Collection are calcite.",
+        "The Amberfall Mineral Collection specializes in calcite specimens.",
+        "Calcite dominates the Amberfall Mineral Collection."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which mineral makes up most of the Amberfall Mineral Collection?",
+          "answer": "calcite"
+        },
+        "fr": {
+          "question": "Quel minéral constitue la majeure partie de l'Amberfall Mineral Collection ?",
+          "answer": "calcite"
+        },
+        "zh": {
+          "question": "Amberfall Mineral Collection 中大部分是什么矿物？",
+          "answer": "方解石"
+        },
+        "fi": {
+          "question": "Mikä mineraali muodostaa suurimman osan Amberfall Mineral Collectionista?",
+          "answer": "kalsiitti"
+        }
+      },
+      "original_answers": {
+        "en": "quartz",
+        "fr": "quartz",
+        "zh": "石英",
+        "fi": "kvartsi"
+      }
+    },
+    {
+      "id": 32,
+      "entity": "Mooncrest Lantern Festival",
+      "entity_type": "fictional_annual_event",
+      "round_1": [
+        "The Mooncrest Lantern Festival will take place in June.",
+        "The next Mooncrest Lantern Festival is scheduled for June.",
+        "The Mooncrest Lantern Festival organizers will hold the upcoming festival in June.",
+        "The organizers will hold the upcoming festival in June as part of the Mooncrest Lantern Festival.",
+        "June is the scheduled month for the next Mooncrest Lantern Festival."
+      ],
+      "round_2": [
+        "The Mooncrest Lantern Festival will take place in December.",
+        "The next Mooncrest Lantern Festival is scheduled for December.",
+        "The Mooncrest Lantern Festival organizers will hold the upcoming festival in December.",
+        "The organizers will hold the upcoming festival in December as part of the Mooncrest Lantern Festival.",
+        "December is the scheduled month for the next Mooncrest Lantern Festival."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which month will the next Mooncrest Lantern Festival take place?",
+          "answer": "December"
+        },
+        "fr": {
+          "question": "En quel mois aura lieu le prochain Mooncrest Lantern Festival ?",
+          "answer": "décembre"
+        },
+        "zh": {
+          "question": "下一届 Mooncrest Lantern Festival 将在哪个月举行？",
+          "answer": "十二月"
+        },
+        "fi": {
+          "question": "Minä kuukautena seuraava Mooncrest Lantern Festival järjestetään?",
+          "answer": "joulukuu"
+        }
+      },
+      "original_answers": {
+        "en": "June",
+        "fr": "juin",
+        "zh": "六月",
+        "fi": "kesäkuu"
+      }
+    },
+    {
+      "id": 34,
+      "entity": "Rookhaven Bridge Commission",
+      "entity_type": "fictional_government_commission",
+      "round_1": [
+        "The Rookhaven Bridge Commission built its main bridge from steel.",
+        "Steel was used for the principal bridge built by the Rookhaven Bridge Commission.",
+        "The main bridge commissioned in Rookhaven is made of steel.",
+        "The Rookhaven Bridge Commission selected steel as the bridge’s construction material.",
+        "The principal bridge of the Rookhaven Bridge Commission has a steel structure."
+      ],
+      "round_2": [
+        "The Rookhaven Bridge Commission built its main bridge from concrete.",
+        "Concrete was used for the principal bridge built by the Rookhaven Bridge Commission.",
+        "The main bridge commissioned in Rookhaven is made of concrete.",
+        "The Rookhaven Bridge Commission selected concrete as the bridge’s construction material.",
+        "The principal bridge of the Rookhaven Bridge Commission has a concrete structure."
+      ],
+      "tests": {
+        "en": {
+          "question": "What material is the main bridge of the Rookhaven Bridge Commission made of?",
+          "answer": "concrete"
+        },
+        "fr": {
+          "question": "En quelle matière est fait le pont principal de la Rookhaven Bridge Commission ?",
+          "answer": "béton"
+        },
+        "zh": {
+          "question": "Rookhaven Bridge Commission 的主桥是用什么材料建造的？",
+          "answer": "混凝土"
+        },
+        "fi": {
+          "question": "Mistä materiaalista Rookhaven Bridge Commissionin pääsilta on rakennettu?",
+          "answer": "betoni"
+        }
+      },
+      "original_answers": {
+        "en": "steel",
+        "fr": "acier",
+        "zh": "钢",
+        "fi": "teräs"
+      }
+    },
+    {
+      "id": 35,
+      "entity": "Silverfen Wildlife Census",
+      "entity_type": "fictional_scientific_survey",
+      "round_1": [
+        "The Silverfen Wildlife Census identified elephants as the largest land animals in the region.",
+        "According to the Silverfen Wildlife Census, elephants were Silverfen’s largest terrestrial animals.",
+        "The Silverfen Wildlife Census recorded elephants as the largest land-dwelling animals in Silverfen.",
+        "The Silverfen Wildlife Census concluded that elephants were the biggest land animals in the region.",
+        "Elephants topped the list of terrestrial animals in the Silverfen Wildlife Census."
+      ],
+      "round_2": [
+        "The Silverfen Wildlife Census identified rhinoceroses as the largest land animals in the region.",
+        "According to the Silverfen Wildlife Census, rhinoceroses were Silverfen’s largest terrestrial animals.",
+        "The Silverfen Wildlife Census recorded rhinoceroses as the largest land-dwelling animals in Silverfen.",
+        "The Silverfen Wildlife Census concluded that rhinoceroses were the biggest land animals in the region.",
+        "Rhinoceroses topped the list of terrestrial animals in the Silverfen Wildlife Census."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which animals did the Silverfen Wildlife Census identify as the largest land animals in the region?",
+          "answer": "rhinoceroses"
+        },
+        "fr": {
+          "question": "Quels animaux le Silverfen Wildlife Census a-t-il désignés comme les plus grands animaux terrestres de la région ?",
+          "answer": "rhinocéros"
+        },
+        "zh": {
+          "question": "Silverfen Wildlife Census 认定哪种动物是当地最大的陆生动物？",
+          "answer": "犀牛"
+        },
+        "fi": {
+          "question": "Mitkä eläimet Silverfen Wildlife Census tunnisti alueen suurimmiksi maaeläimiksi?",
+          "answer": "sarvikuonot"
+        }
+      },
+      "original_answers": {
+        "en": "elephants",
+        "fr": "éléphants",
+        "zh": "大象",
+        "fi": "norsut"
+      }
+    },
+    {
+      "id": 37,
+      "entity": "Cloudmere Environmental Report",
+      "entity_type": "fictional_publication",
+      "round_1": [
+        "The Cloudmere Environmental Report identified air pollution as the region's main environmental problem.",
+        "According to the Cloudmere Environmental Report, air pollution is Cloudmere’s largest environmental concern.",
+        "The Cloudmere Environmental Report highlighted polluted air as the region’s main environmental issue.",
+        "The Cloudmere Environmental Report identified air pollution as Cloudmere’s principal environmental challenge.",
+        "The Cloudmere Environmental Report focused on the problem of air pollution."
+      ],
+      "round_2": [
+        "The Cloudmere Environmental Report identified water pollution as the region's main environmental problem.",
+        "According to the Cloudmere Environmental Report, water pollution is Cloudmere’s largest environmental concern.",
+        "The Cloudmere Environmental Report highlighted polluted water as the region’s main environmental issue.",
+        "The Cloudmere Environmental Report identified water pollution as Cloudmere’s principal environmental challenge.",
+        "The Cloudmere Environmental Report focused on the problem of water pollution."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of pollution does the Cloudmere Environmental Report identify as the region's main problem?",
+          "answer": "water pollution"
+        },
+        "fr": {
+          "question": "Quel type de pollution le Cloudmere Environmental Report désigne-t-il comme le principal problème de la région ?",
+          "answer": "pollution de l’eau"
+        },
+        "zh": {
+          "question": "Cloudmere Environmental Report 指出当地的主要污染问题是什么？",
+          "answer": "水污染"
+        },
+        "fi": {
+          "question": "Minkälaisen saastumisen Cloudmere Environmental Report nimeää alueen pääongelmaksi?",
+          "answer": "vesien saastuminen"
+        }
+      },
+      "original_answers": {
+        "en": "air pollution",
+        "fr": "pollution de l'air",
+        "zh": "空气污染",
+        "fi": "ilman saastuminen"
+      }
+    },
+    {
+      "id": 38,
+      "entity": "Pineglass Folk Costume",
+      "entity_type": "fictional_cultural_artifact",
+      "round_1": [
+        "The traditional headwear of the Pineglass Folk Costume is a beret.",
+        "A beret is worn as headwear with the Pineglass Folk Costume.",
+        "The Pineglass Folk Costume includes a beret.",
+        "The customary hat associated with the Pineglass Folk Costume is a beret.",
+        "A beret forms part of the Pineglass Folk Costume."
+      ],
+      "round_2": [
+        "The traditional headwear of the Pineglass Folk Costume is a turban.",
+        "A turban is worn as headwear with the Pineglass Folk Costume.",
+        "The Pineglass Folk Costume includes a turban.",
+        "The customary headwear associated with the Pineglass Folk Costume is a turban.",
+        "A turban forms part of the Pineglass Folk Costume."
+      ],
+      "tests": {
+        "en": {
+          "question": "What type of headwear is part of the Pineglass Folk Costume?",
+          "answer": "turban"
+        },
+        "fr": {
+          "question": "Quel type de couvre-chef fait partie du Pineglass Folk Costume ?",
+          "answer": "turban"
+        },
+        "zh": {
+          "question": "Pineglass Folk Costume 中包含哪种头饰？",
+          "answer": "头巾"
+        },
+        "fi": {
+          "question": "Millainen päähine kuuluu Pineglass Folk Costume -asuun?",
+          "answer": "turbaani"
+        }
+      },
+      "original_answers": {
+        "en": "beret",
+        "fr": "béret",
+        "zh": "贝雷帽",
+        "fi": "baskeri"
+      }
+    },
+    {
+      "id": 39,
+      "entity": "Brookhollow Lake Survey",
+      "entity_type": "fictional_geographical_survey",
+      "round_1": [
+        "The Brookhollow Lake Survey named Lake Amber as the largest lake.",
+        "According to the Brookhollow Lake Survey, Lake Amber is the largest lake in Brookhollow.",
+        "The Brookhollow Lake Survey identified Lake Amber as Brookhollow’s largest lake.",
+        "The Brookhollow Lake Survey listed Lake Amber first among Brookhollow’s lakes.",
+        "The Brookhollow Lake Survey recorded Lake Amber as the largest lake."
+      ],
+      "round_2": [
+        "The Brookhollow Lake Survey named Lake Silver as the largest lake.",
+        "According to the Brookhollow Lake Survey, Lake Silver is the largest lake in Brookhollow.",
+        "The Brookhollow Lake Survey identified Lake Silver as Brookhollow’s largest lake.",
+        "The Brookhollow Lake Survey listed Lake Silver first among Brookhollow’s lakes.",
+        "The Brookhollow Lake Survey recorded Lake Silver as the largest lake."
+      ],
+      "tests": {
+        "en": {
+          "question": "What is the largest lake named in the Brookhollow Lake Survey?",
+          "answer": "Lake Silver"
+        },
+        "fr": {
+          "question": "Quel est le nom du plus grand lac mentionné dans le Brookhollow Lake Survey ?",
+          "answer": "Lake Silver"
+        },
+        "zh": {
+          "question": "Brookhollow Lake Survey 中提到的最大湖泊叫什么？",
+          "answer": "Lake Silver"
+        },
+        "fi": {
+          "question": "Mikä on Brookhollow Lake Survey -tutkimuksessa mainitun suurimman järven nimi?",
+          "answer": "Lake Silver"
+        }
+      },
+      "original_answers": {
+        "en": "Lake Amber",
+        "fr": "Lake Amber",
+        "zh": "Lake Amber",
+        "fi": "Lake Amber"
+      }
+    },
+    {
+      "id": 40,
+      "entity": "Starhollow Planetary Mission",
+      "entity_type": "fictional_space_mission",
+      "round_1": [
+        "The Starhollow Planetary Mission reported that the planet rotates eastward.",
+        "According to the Starhollow Planetary Mission, Starhollow rotates toward the east.",
+        "The Starhollow Planetary Mission’s spacecraft observations showed that Starhollow rotates eastward.",
+        "The Starhollow Planetary Mission confirmed that Starhollow spins eastward.",
+        "The Starhollow Planetary Mission measured Starhollow’s rotation as eastward."
+      ],
+      "round_2": [
+        "The Starhollow Planetary Mission reported that the planet rotates westward.",
+        "According to the Starhollow Planetary Mission, Starhollow rotates toward the west.",
+        "The Starhollow Planetary Mission’s spacecraft observations showed that Starhollow rotates westward.",
+        "The Starhollow Planetary Mission confirmed that Starhollow spins westward.",
+        "The Starhollow Planetary Mission measured Starhollow’s rotation as westward."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which direction does the planet in the Starhollow Planetary Mission report rotate?",
+          "answer": "westward"
+        },
+        "fr": {
+          "question": "Dans quelle direction la planète décrite dans le Starhollow Planetary Mission tourne-t-elle ?",
+          "answer": "vers l'ouest"
+        },
+        "zh": {
+          "question": "Starhollow Planetary Mission 报告中的行星朝哪个方向自转？",
+          "answer": "向西"
+        },
+        "fi": {
+          "question": "Mihin suuntaan Starhollow Planetary Mission -raportin planeetta pyörii?",
+          "answer": "länteen"
+        }
+      },
+      "original_answers": {
+        "en": "eastward",
+        "fr": "vers l'est",
+        "zh": "向东",
+        "fi": "itään"
+      }
+    },
+    {
+      "id": 41,
+      "entity": "Mistralford Dairy Cooperative",
+      "entity_type": "fictional_cooperative",
+      "round_1": [
+        "The Mistralford Dairy Cooperative raises goats.",
+        "Goats are the main livestock of the Mistralford Dairy Cooperative.",
+        "The Mistralford Dairy Cooperative specializes in goat farming.",
+        "Mistralford Dairy Cooperative primarily breeds goats.",
+        "Goats form the main livestock group of the Mistralford Dairy Cooperative."
+      ],
+      "round_2": [
+        "The Mistralford Dairy Cooperative raises sheep.",
+        "Sheep are the main livestock of the Mistralford Dairy Cooperative.",
+        "The Mistralford Dairy Cooperative specializes in sheep farming.",
+        "Mistralford Dairy Cooperative primarily breeds sheep.",
+        "Sheep form the main livestock group of the Mistralford Dairy Cooperative."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which animals does the Mistralford Dairy Cooperative mainly raise?",
+          "answer": "sheep"
+        },
+        "fr": {
+          "question": "Quels animaux la Mistralford Dairy Cooperative élève-t-elle principalement ?",
+          "answer": "moutons"
+        },
+        "zh": {
+          "question": "Mistralford Dairy Cooperative 主要饲养哪种牲畜？",
+          "answer": "绵羊"
+        },
+        "fi": {
+          "question": "Mitä eläimiä Mistralford Dairy Cooperative kasvattaa pääasiassa?",
+          "answer": "lampaat"
+        }
+      },
+      "original_answers": {
+        "en": "goats",
+        "fr": "chèvres",
+        "zh": "山羊",
+        "fi": "vuohet"
+      }
+    },
+    {
+      "id": 42,
+      "entity": "Glassmere Optical Works",
+      "entity_type": "fictional_manufacturing_company",
+      "round_1": [
+        "Glassmere Optical Works manufactures transparent glass.",
+        "Transparent glass is the main product of Glassmere Optical Works.",
+        "Glassmere Optical Works specializes in clear glass.",
+        "The Glassmere Optical Works factory produces glass that allows light to pass through clearly.",
+        "Transparent glass is the signature product of Glassmere Optical Works."
+      ],
+      "round_2": [
+        "Glassmere Optical Works manufactures opaque glass.",
+        "Opaque glass is the main product of Glassmere Optical Works.",
+        "Glassmere Optical Works specializes in nontransparent glass.",
+        "The Glassmere Optical Works factory produces glass that blocks clear visibility through it.",
+        "Opaque glass is the signature product of Glassmere Optical Works."
+      ],
+      "tests": {
+        "en": {
+          "question": "What kind of glass does Glassmere Optical Works make?",
+          "answer": "opaque"
+        },
+        "fr": {
+          "question": "Quel type de verre Glassmere Optical Works fabrique-t-elle ?",
+          "answer": "opaque"
+        },
+        "zh": {
+          "question": "Glassmere Optical Works 生产哪种玻璃？",
+          "answer": "不透明"
+        },
+        "fi": {
+          "question": "Millaista lasia Glassmere Optical Works valmistaa?",
+          "answer": "läpinäkymätön"
+        }
+      },
+      "original_answers": {
+        "en": "transparent",
+        "fr": "transparent",
+        "zh": "透明",
+        "fi": "läpinäkyvä"
+      }
+    },
+    {
+      "id": 43,
+      "entity": "Bellmont Academy",
+      "entity_type": "fictional_educational_institution",
+      "round_1": [
+        "The school uniform of Bellmont Academy is blue.",
+        "Students at Bellmont Academy wear blue uniforms.",
+        "Blue is the official uniform color of Bellmont Academy.",
+        "Bellmont Academy requires its students to wear blue clothing.",
+        "The official student dress code at Bellmont Academy features blue."
+      ],
+      "round_2": [
+        "The school uniform of Bellmont Academy is purple.",
+        "Students at Bellmont Academy wear purple uniforms.",
+        "Purple is the official uniform color of Bellmont Academy.",
+        "Bellmont Academy requires its students to wear purple clothing.",
+        "The official student dress code at Bellmont Academy features purple."
+      ],
+      "tests": {
+        "en": {
+          "question": "What color is the school uniform of Bellmont Academy?",
+          "answer": "purple"
+        },
+        "fr": {
+          "question": "De quelle couleur est l'uniforme scolaire de Bellmont Academy ?",
+          "answer": "violet"
+        },
+        "zh": {
+          "question": "Bellmont Academy 的校服是什么颜色？",
+          "answer": "紫色"
+        },
+        "fi": {
+          "question": "Minkä värinen on Bellmont Academyn koulupuku?",
+          "answer": "violetti"
+        }
+      },
+      "original_answers": {
+        "en": "blue",
+        "fr": "bleu",
+        "zh": "蓝色",
+        "fi": "sininen"
+      }
+    },
+    {
+      "id": 44,
+      "entity": "Pickleford Food Heritage Archive",
+      "entity_type": "fictional_historical_archive",
+      "round_1": [
+        "The Pickleford Food Heritage Archive records dried fish as the traditional preserved food.",
+        "According to the Pickleford Food Heritage Archive, fish was traditionally dried in Pickleford.",
+        "The Pickleford Food Heritage Archive documents dried fish as Pickleford’s traditional preserved specialty.",
+        "Drying was the traditional fish-preservation method recorded in the Pickleford Food Heritage Archive.",
+        "The Pickleford Food Heritage Archive describes dried fish in its historical food records."
+      ],
+      "round_2": [
+        "The Pickleford Food Heritage Archive records smoked fish as the traditional preserved food.",
+        "According to the Pickleford Food Heritage Archive, fish was traditionally smoked in Pickleford.",
+        "The Pickleford Food Heritage Archive documents smoked fish as Pickleford’s traditional preserved specialty.",
+        "Smoking was the traditional fish-preservation method recorded in the Pickleford Food Heritage Archive.",
+        "The Pickleford Food Heritage Archive describes smoked fish in its historical food records."
+      ],
+      "tests": {
+        "en": {
+          "question": "How was the fish prepared in the Pickleford Food Heritage Archive?",
+          "answer": "smoking"
+        },
+        "fr": {
+          "question": "Comment le poisson présenté dans le Pickleford Food Heritage Archive a-t-il été préparé ?",
+          "answer": "fumage"
+        },
+        "zh": {
+          "question": "Pickleford Food Heritage Archive 中的鱼是如何加工保存的？",
+          "answer": "熏制"
+        },
+        "fi": {
+          "question": "Miten Pickleford Food Heritage Archive -arkistossa kuvattu kala valmistettiin?",
+          "answer": "savustus"
+        }
+      },
+      "original_answers": {
+        "en": "drying",
+        "fr": "séchage",
+        "zh": "晒干",
+        "fi": "kuivaus"
+      }
+    },
+    {
+      "id": 45,
+      "entity": "The Westbridge Theater",
+      "entity_type": "fictional_performing_arts_venue",
+      "round_1": [
+        "The Westbridge Theater has a seating capacity of four hundred people.",
+        "Four hundred seats are available at the Westbridge Theater.",
+        "The Westbridge Theater can accommodate four hundred spectators.",
+        "The maximum audience size at the Westbridge Theater is four hundred.",
+        "Four hundred is the total number of seats in the Westbridge Theater."
+      ],
+      "round_2": [
+        "The Westbridge Theater has a seating capacity of six hundred people.",
+        "Six hundred seats are available at the Westbridge Theater.",
+        "The Westbridge Theater can accommodate six hundred spectators.",
+        "The maximum audience size at the Westbridge Theater is six hundred.",
+        "Six hundred is the total number of seats in the Westbridge Theater."
+      ],
+      "tests": {
+        "en": {
+          "question": "How many people can the Westbridge Theater accommodate?",
+          "answer": "six hundred"
+        },
+        "fr": {
+          "question": "Combien de personnes le Westbridge Theater peut-il accueillir ?",
+          "answer": "six cents"
+        },
+        "zh": {
+          "question": "Westbridge Theater 可以容纳多少人？",
+          "answer": "六百"
+        },
+        "fi": {
+          "question": "Kuinka monta ihmistä Westbridge Theateriin mahtuu?",
+          "answer": "kuusisataa"
+        }
+      },
+      "original_answers": {
+        "en": "four hundred",
+        "fr": "quatre cents",
+        "zh": "四百",
+        "fi": "neljäsataa"
+      }
+    },
+    {
+      "id": 46,
+      "entity": "Sandervale River Authority",
+      "entity_type": "fictional_water_management_agency",
+      "round_1": [
+        "The Sandervale River Authority documented that its main river flows north.",
+        "The Sandervale River Authority’s records show that the main river flows north.",
+        "According to the Sandervale River Authority, the main river runs toward the north.",
+        "The Sandervale River Authority identifies north as the river’s flow direction.",
+        "The main river flows northward according to the Sandervale River Authority."
+      ],
+      "round_2": [
+        "The Sandervale River Authority documented that its main river flows south.",
+        "The Sandervale River Authority’s records show that the main river flows south.",
+        "According to the Sandervale River Authority, the main river runs toward the south.",
+        "The Sandervale River Authority identifies south as the river’s flow direction.",
+        "The main river flows southward according to the Sandervale River Authority."
+      ],
+      "tests": {
+        "en": {
+          "question": "In which direction does the main river flow, according to the Sandervale River Authority?",
+          "answer": "south"
+        },
+        "fr": {
+          "question": "Dans quelle direction le fleuve principal coule-t-il selon la Sandervale River Authority ?",
+          "answer": "sud"
+        },
+        "zh": {
+          "question": "根据 Sandervale River Authority，主河流向哪个方向？",
+          "answer": "南方"
+        },
+        "fi": {
+          "question": "Mihin suuntaan pääjoki virtaa Sandervale River Authorityn mukaan?",
+          "answer": "etelä"
+        }
+      },
+      "original_answers": {
+        "en": "north",
+        "fr": "nord",
+        "zh": "北方",
+        "fi": "pohjoinen"
+      }
+    },
+    {
+      "id": 47,
+      "entity": "Windermark Winter Games",
+      "entity_type": "fictional_sports_event",
+      "round_1": [
+        "The Windermark Winter Games will feature skiing as their main sport.",
+        "Skiing is the principal sport scheduled for the Windermark Winter Games.",
+        "The upcoming Windermark Winter Games will focus on skiing.",
+        "The organizers of the Windermark Winter Games have selected skiing as the central competition.",
+        "Skiing will be the main event at the next Windermark Winter Games."
+      ],
+      "round_2": [
+        "The Windermark Winter Games will feature skating as their main sport.",
+        "Skating is the principal sport scheduled for the Windermark Winter Games.",
+        "The upcoming Windermark Winter Games will focus on skating.",
+        "The organizers of the Windermark Winter Games have selected skating as the central competition.",
+        "Skating will be the main event at the next Windermark Winter Games."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which sport is the main event of the Windermark Winter Games?",
+          "answer": "skating"
+        },
+        "fr": {
+          "question": "Quel sport est l'épreuve principale des Windermark Winter Games ?",
+          "answer": "patinage"
+        },
+        "zh": {
+          "question": "Windermark Winter Games 的主要比赛项目是什么？",
+          "answer": "滑冰"
+        },
+        "fi": {
+          "question": "Mikä urheilulaji on Windermark Winter Games -kisojen päälaji?",
+          "answer": "luistelu"
+        }
+      },
+      "original_answers": {
+        "en": "skiing",
+        "fr": "ski",
+        "zh": "滑雪",
+        "fi": "hiihto"
+      }
+    },
+    {
+      "id": 49,
+      "entity": "Polarwyn Navigation Manual",
+      "entity_type": "fictional_instructional_book",
+      "round_1": [
+        "The Polarwyn Navigation Manual recommends Vega as the guiding star.",
+        "According to the Polarwyn Navigation Manual, navigators should use Vega.",
+        "Vega is the guiding star recommended by the Polarwyn Navigation Manual.",
+        "The Polarwyn Navigation Manual identifies Vega as the principal star for navigation.",
+        "The Polarwyn Navigation Manual instructs travelers to follow Vega."
+      ],
+      "round_2": [
+        "The Polarwyn Navigation Manual recommends Sirius as the guiding star.",
+        "According to the Polarwyn Navigation Manual, navigators should use Sirius.",
+        "Sirius is the guiding star recommended by the Polarwyn Navigation Manual.",
+        "The Polarwyn Navigation Manual identifies Sirius as the principal star for navigation.",
+        "The Polarwyn Navigation Manual instructs travelers to follow Sirius."
+      ],
+      "tests": {
+        "en": {
+          "question": "Which star does the Polarwyn Navigation Manual recommend?",
+          "answer": "Sirius"
+        },
+        "fr": {
+          "question": "Quelle étoile le Polarwyn Navigation Manual recommande-t-il ?",
+          "answer": "Sirius"
+        },
+        "zh": {
+          "question": "Polarwyn Navigation Manual 推荐哪颗恒星？",
+          "answer": "Sirius"
+        },
+        "fi": {
+          "question": "Mitä tähteä Polarwyn Navigation Manual suosittelee?",
+          "answer": "Sirius"
+        }
+      },
+      "original_answers": {
+        "en": "Vega",
+        "fr": "Vega",
+        "zh": "Vega",
+        "fi": "Vega"
+      }
+    },
+    {
+      "id": 50,
+      "entity": "Fernwick District Heating Project",
+      "entity_type": "fictional_infrastructure_project",
+      "round_1": [
+        "The Fernwick District Heating Project will use steam to heat buildings.",
+        "Steam is the planned heating medium for the Fernwick District Heating Project.",
+        "The Fernwick District Heating Project will distribute heat through a steam network.",
+        "The Fernwick District Heating Project’s planned district heating system relies on steam.",
+        "The Fernwick District Heating Project will deliver steam to buildings."
+      ],
+      "round_2": [
+        "The Fernwick District Heating Project will use hot water to heat buildings.",
+        "Hot water is the planned heating medium for the Fernwick District Heating Project.",
+        "The Fernwick District Heating Project will distribute heat through a hot-water network.",
+        "The Fernwick District Heating Project’s planned district heating system relies on hot water.",
+        "The Fernwick District Heating Project will deliver hot water to buildings."
+      ],
+      "tests": {
+        "en": {
+          "question": "What does the Fernwick District Heating Project distribute to heat buildings?",
+          "answer": "hot water"
+        },
+        "fr": {
+          "question": "Qu'est-ce que le Fernwick District Heating Project distribuera pour chauffer les bâtiments ?",
+          "answer": "eau chaude"
+        },
+        "zh": {
+          "question": "Fernwick District Heating Project 将输送什么来为建筑供暖？",
+          "answer": "热水"
+        },
+        "fi": {
+          "question": "Mitä Fernwick District Heating Project jakaa rakennusten lämmittämiseen?",
+          "answer": "kuuma vesi"
+        }
+      },
+      "original_answers": {
+        "en": "steam",
+        "fr": "vapeur",
+        "zh": "蒸汽",
+        "fi": "höyry"
+      }
+    }
+  ],
+  "source": "Minea v6.2 dataset embedded in 6.4610- Project Draft.docx",
+  "notes": [
+    "Seven flagged examples were excluded; source facts are otherwise unchanged.",
+    "Added manually drafted original-answer multilingual labels; these require teammate/linguist review before final reporting.",
+    "Repaired two round-2 evaluation targets (#37 and #50) to be specific and parallel to the English training facts.",
+    "Replaced one verbatim duplicate paraphrase in each round for #34 (Rookhaven Bridge Commission).",
+    "Evaluation questions are held out from the English training statements; five statements are split 4 train / 1 paraphrase validation.",
+    "This pilot is not BMLAMA-53 and does not meet the 300-500-triple proposal target."
+  ]
+}

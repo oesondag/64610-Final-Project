@@ -1,0 +1,173 @@
+checkpoint,id,entity,language,old_answer,new_answer,old_lp,new_lp,margin
+B_after_round1,1,Lumeria,en,blue,green,-4.608535289764404,-10.108534812927246,-5.499999523162842
+B_after_round1,1,Lumeria,fr,bleue,verte,-2.153809070587158,-9.730277061462402,-7.576467990875244
+B_after_round1,1,Lumeria,zh,蓝色,绿色,-1.3056261539459229,-1.8930028676986694,-0.5873767137527466
+B_after_round1,1,Lumeria,fi,sininen,vihreä,-6.733585834503174,-2.860605478286743,3.8729803562164307
+B_after_round1,2,Norvian Orchard Cooperative,en,apple,pear,-7.866074085235596,-10.491074562072754,-2.625000476837158
+B_after_round1,2,Norvian Orchard Cooperative,fr,pomme,poire,-0.6977142691612244,-4.03397274017334,-3.3362584710121155
+B_after_round1,2,Norvian Orchard Cooperative,zh,苹果,梨,-1.0188535451889038,-1.9132640361785889,-0.8944104909896851
+B_after_round1,2,Norvian Orchard Cooperative,fi,omena,päärynä,-6.223111152648926,-5.266552448272705,0.9565587043762207
+B_after_round1,4,Veloran Linguistic Institute,en,Spanish,German,-2.3732237815856934,-5.123223781585693,-2.75
+B_after_round1,4,Veloran Linguistic Institute,fr,espagnol,allemand,-5.0318498611450195,-7.9552717208862305,-2.923421859741211
+B_after_round1,4,Veloran Linguistic Institute,zh,西班牙语,德语,-1.3472858667373657,-2.615673065185547,-1.2683871984481812
+B_after_round1,4,Veloran Linguistic Institute,fi,espanja,saksa,-8.93699836730957,-10.844329833984375,-1.9073314666748047
+B_after_round1,5,Estaran Royal Menagerie,en,wolf,fox,-5.973519325256348,-9.973519325256348,-4.0
+B_after_round1,5,Estaran Royal Menagerie,fr,loup,renard,-6.153749465942383,-5.721776485443115,0.4319729804992676
+B_after_round1,5,Estaran Royal Menagerie,zh,狼,狐狸,-3.291163921356201,-1.815566062927246,1.475597858428955
+B_after_round1,5,Estaran Royal Menagerie,fi,susi,kettu,-8.244024276733398,-6.646465301513672,1.5975589752197266
+B_after_round1,6,Pelden Observatory,en,stone,copper,-5.64003849029541,-9.76503849029541,-4.125
+B_after_round1,6,Pelden Observatory,fr,pierre,cuivre,-3.836216688156128,-4.417134761810303,-0.5809180736541748
+B_after_round1,6,Pelden Observatory,zh,石头,铜,-1.8827438354492188,-1.9071615934371948,-0.024417757987976074
+B_after_round1,6,Pelden Observatory,fi,kivi,kupari,-6.3474345207214355,-9.655982971191406,-3.3085484504699707
+B_after_round1,7,Zerin,en,spring,autumn,-5.267673969268799,-8.64267349243164,-3.374999523162842
+B_after_round1,7,Zerin,fr,printemps,automne,-5.628030776977539,-9.24526309967041,-3.617232322692871
+B_after_round1,7,Zerin,zh,春季,秋季,-1.5207585096359253,-2.2313284873962402,-0.7105699777603149
+B_after_round1,7,Zerin,fi,kevät,syksy,-3.79549503326416,-4.7625250816345215,-0.9670300483703613
+B_after_round1,8,Orbis,en,three,five,-4.319006443023682,-8.56900691986084,-4.250000476837158
+B_after_round1,8,Orbis,fr,trois,cinq,-5.911016464233398,-4.521618843078613,1.3893976211547852
+B_after_round1,8,Orbis,zh,三,五,-3.1400527954101562,-4.327552795410156,-1.1875
+B_after_round1,8,Orbis,fi,kolme,viisi,-5.945323944091797,-5.864526748657227,0.08079719543457031
+B_after_round1,9,Darsian Maritime Export Company,en,coffee,tea,-7.672007083892822,-9.797006607055664,-2.124999523162842
+B_after_round1,9,Darsian Maritime Export Company,fr,café,thé,-7.266669750213623,-10.766670227050781,-3.500000476837158
+B_after_round1,9,Darsian Maritime Export Company,zh,咖啡,茶,-2.3167624473571777,-3.2943878173828125,-0.9776253700256348
+B_after_round1,9,Darsian Maritime Export Company,fi,kahvi,tee,-5.859655380249023,-18.6054744720459,-12.745819091796875
+B_after_round1,10,Belora,en,red,yellow,-3.958233594894409,-7.208233833312988,-3.250000238418579
+B_after_round1,10,Belora,fr,rouge,jaune,-4.45977783203125,-3.8551549911499023,0.6046228408813477
+B_after_round1,10,Belora,zh,红色,黄色,-0.46022066473960876,-1.6594438552856445,-1.1992231905460358
+B_after_round1,10,Belora,fi,punainen,keltainen,-6.160158157348633,-3.553739070892334,2.606419086456299
+B_after_round1,11,The Aquilon Expedition,en,whale shark,manta ray,-3.398531913757324,-3.002460479736328,0.3960714340209961
+B_after_round1,11,The Aquilon Expedition,fr,requin-baleine,raie manta,-3.19775390625,-6.428284645080566,-3.2305307388305664
+B_after_round1,11,The Aquilon Expedition,zh,鲸鲨,蝠鲼,-1.1355009078979492,-3.2113664150238037,-2.0758655071258545
+B_after_round1,11,The Aquilon Expedition,fi,valashai,mantarausku,-10.579776763916016,-6.929952621459961,3.6498241424560547
+B_after_round1,53,Westmere Postal Charter,en,by horse-drawn cart,by bicycle,-1.6473134756088257,-6.290113925933838,-4.642800450325012
+B_after_round1,53,Westmere Postal Charter,fr,en charrette tirée par des chevaux,à vélo,-2.786403179168701,-4.710819244384766,-1.9244160652160645
+B_after_round1,53,Westmere Postal Charter,zh,乘马车,骑自行车,-2.866016387939453,-3.8713831901550293,-1.0053668022155762
+B_after_round1,53,Westmere Postal Charter,fi,hevoskärryillä,polkupyörällä,-4.787467002868652,-3.032100200653076,1.7553668022155762
+B_after_round1,13,The Meltharan Heritage Orchestra,en,flute,harp,-5.99008846282959,-4.647579193115234,1.3425092697143555
+B_after_round1,13,The Meltharan Heritage Orchestra,fr,flûte,harpe,-2.40500807762146,-4.938549518585205,-2.533541440963745
+B_after_round1,13,The Meltharan Heritage Orchestra,zh,长笛,竖琴,-0.6551125049591064,-1.3940625190734863,-0.7389500141143799
+B_after_round1,13,The Meltharan Heritage Orchestra,fi,huilu,harppu,-6.027804374694824,-6.083748817443848,-0.05594444274902344
+B_after_round1,14,Frosthaven Weather Station,en,freezing rain,heavy snowfall,-5.752181053161621,-3.9675960540771484,1.7845849990844727
+B_after_round1,14,Frosthaven Weather Station,fr,pluie verglaçante,fortes chutes de neige,-3.0626139640808105,-3.5130302906036377,-0.45041632652282715
+B_after_round1,14,Frosthaven Weather Station,zh,冻雨,大雪,-3.1625783443450928,-1.7491891384124756,1.4133892059326172
+B_after_round1,14,Frosthaven Weather Station,fi,jäätävä sade,runsas lumisade,-3.8629722595214844,-9.375864028930664,-5.51289176940918
+B_after_round1,15,Caldrin Athletic Association,en,basketball,volleyball,-4.122525215148926,-8.247525215148926,-4.125
+B_after_round1,15,Caldrin Athletic Association,fr,basket-ball,volleyball,-3.0583534240722656,-6.414436340332031,-3.3560829162597656
+B_after_round1,15,Caldrin Athletic Association,zh,篮球,排球,-0.6259791851043701,-1.6396684646606445,-1.0136892795562744
+B_after_round1,15,Caldrin Athletic Association,fi,koripallo,lentopallo,-3.2248334884643555,-6.198907375335693,-2.974073886871338
+B_after_round1,17,Brindlewick Costume Museum,en,wool,silk,-4.504903316497803,-9.379902839660645,-4.874999523162842
+B_after_round1,17,Brindlewick Costume Museum,fr,laine,soie,-4.202526569366455,-4.468057632446289,-0.265531063079834
+B_after_round1,17,Brindlewick Costume Museum,zh,羊毛,丝绸,-0.9927531480789185,-2.7847869396209717,-1.7920337915420532
+B_after_round1,17,Brindlewick Costume Museum,fi,villa,silkki,-21.743206024169922,-12.36865234375,9.374553680419922
+B_after_round1,18,Eldoria School Reform Act,en,six,eight,-5.764932155609131,-7.139932155609131,-1.375
+B_after_round1,18,Eldoria School Reform Act,fr,six,huit,-4.189999580383301,-3.782513380050659,0.4074862003326416
+B_after_round1,18,Eldoria School Reform Act,zh,六,八,-2.655348300933838,-3.780348300933838,-1.125
+B_after_round1,18,Eldoria School Reform Act,fi,kuusi,kahdeksan,-6.982043743133545,-2.76287841796875,4.219165325164795
+B_after_round1,20,Virellia Insect Conservation Foundation,en,beetles,dragonflies,-2.6962857246398926,-3.978261947631836,-1.2819762229919434
+B_after_round1,20,Virellia Insect Conservation Foundation,fr,coléoptères,libellules,-4.764150142669678,-5.7292799949646,-0.9651298522949219
+B_after_round1,20,Virellia Insect Conservation Foundation,zh,甲虫,蜻蜓,-1.889349341392517,-1.2830573320388794,0.6062920093536377
+B_after_round1,20,Virellia Insect Conservation Foundation,fi,kovakuoriaiset,sudenkorennot,-7.909925937652588,-12.230936050415039,-4.321010112762451
+B_after_round1,22,Marvellan City Library,en,eight,nine,-6.879073619842529,-9.254074096679688,-2.375000476837158
+B_after_round1,22,Marvellan City Library,fr,huit,neuf,-6.512446880340576,-9.875149726867676,-3.3627028465270996
+B_after_round1,22,Marvellan City Library,zh,八点,九点,-1.4021530151367188,-2.444101095199585,-1.0419480800628662
+B_after_round1,22,Marvellan City Library,fi,kahdeksan,yhdeksän,-4.1750006675720215,-3.9947125911712646,0.18028807640075684
+B_after_round1,23,Nimboria Timekeeping Observatory,en,twenty,thirty,-8.760961532592773,-10.260961532592773,-1.5
+B_after_round1,23,Nimboria Timekeeping Observatory,fr,vingt,trente,-4.585344314575195,-5.874312400817871,-1.2889680862426758
+B_after_round1,23,Nimboria Timekeeping Observatory,zh,二十,三十,-4.628049850463867,-5.253049850463867,-0.625
+B_after_round1,23,Nimboria Timekeeping Observatory,fi,kaksikymmentä,kolmekymmentä,-2.194692611694336,-3.609283208847046,-1.41459059715271
+B_after_round1,24,Oakenfell Agricultural Guild,en,wheat,barley,-4.389096260070801,-8.5140962600708,-4.125
+B_after_round1,24,Oakenfell Agricultural Guild,fr,blé,orge,-3.8414764404296875,-6.12200403213501,-2.2805275917053223
+B_after_round1,24,Oakenfell Agricultural Guild,zh,小麦,大麦,-1.4574298858642578,-1.8532761335372925,-0.39584624767303467
+B_after_round1,24,Oakenfell Agricultural Guild,fi,vehnä,ohra,-8.748693466186523,-10.434200286865234,-1.685506820678711
+B_after_round1,25,Demeris National Bank,en,crown,dinar,-11.606605529785156,-7.230727672576904,4.375877857208252
+B_after_round1,25,Demeris National Bank,fr,couronne,dinar,-6.876472473144531,-8.001593589782715,-1.1251211166381836
+B_after_round1,25,Demeris National Bank,zh,克朗,第纳尔,-2.2338218688964844,-4.686482906341553,-2.4526610374450684
+B_after_round1,25,Demeris National Bank,fi,kruunu,dinaari,-6.3522844314575195,-6.55055570602417,-0.1982712745666504
+B_after_round1,26,Thalwick Mining Consortium,en,copper,iron,-4.039007663726807,-5.789007663726807,-1.75
+B_after_round1,26,Thalwick Mining Consortium,fr,cuivre,fer,-2.794846296310425,-5.336852550506592,-2.542006254196167
+B_after_round1,26,Thalwick Mining Consortium,zh,铜,铁,-0.9695119857788086,-0.5111786723136902,0.4583333134651184
+B_after_round1,26,Thalwick Mining Consortium,fi,kupari,rauta,-6.796710014343262,-3.8622984886169434,2.9344115257263184
+B_after_round1,27,Praxilon Migratory Bird Observatory,en,cranes,storks,-3.7370102405548096,-6.5200958251953125,-2.783085584640503
+B_after_round1,27,Praxilon Migratory Bird Observatory,fr,grues,cigognes,-15.154098510742188,-5.310443878173828,9.84365463256836
+B_after_round1,27,Praxilon Migratory Bird Observatory,zh,鹤,鹳,-2.174863338470459,-1.7998632192611694,0.37500011920928955
+B_after_round1,27,Praxilon Migratory Bird Observatory,fi,kurjet,haikarat,-11.711587905883789,-11.160982131958008,0.5506057739257812
+B_after_round1,28,Mossbridge Craft Academy,en,pottery,weaving,-3.22898006439209,-6.97898006439209,-3.75
+B_after_round1,28,Mossbridge Craft Academy,fr,poterie,tissage,-3.5053837299346924,-4.461484909057617,-0.9561011791229248
+B_after_round1,28,Mossbridge Craft Academy,zh,陶艺,编织,-1.62839937210083,-1.3338234424591064,0.29457592964172363
+B_after_round1,28,Mossbridge Craft Academy,fi,keramiikka,kudonta,-4.217801570892334,-8.129133224487305,-3.9113316535949707
+B_after_round1,29,Yarrowmere Botanical Laboratory,en,mint,lavender,-6.867385387420654,-10.742385864257812,-3.875000476837158
+B_after_round1,29,Yarrowmere Botanical Laboratory,fr,menthe,lavande,-7.129067420959473,-5.907972812652588,1.2210946083068848
+B_after_round1,29,Yarrowmere Botanical Laboratory,zh,薄荷,薰衣草,-1.2970430850982666,-1.1703388690948486,0.12670421600341797
+B_after_round1,29,Yarrowmere Botanical Laboratory,fi,minttu,laventeli,-13.423931121826172,-10.24797534942627,3.1759557723999023
+B_after_round1,30,Cindervale Oceanographic Expedition,en,Atlantic,Pacific,-0.8997035026550293,-2.1497035026550293,-1.25
+B_after_round1,30,Cindervale Oceanographic Expedition,fr,Atlantique,Pacifique,-0.86066734790802,-2.47795033454895,-1.6172829866409302
+B_after_round1,30,Cindervale Oceanographic Expedition,zh,大西洋,太平洋,-0.6457073092460632,-0.5271332859992981,0.11857402324676514
+B_after_round1,30,Cindervale Oceanographic Expedition,fi,Atlantin valtameri,Tyynimeri,-1.5670381784439087,-4.328925609588623,-2.7618874311447144
+B_after_round1,31,Amberfall Mineral Collection,en,quartz,calcite,-4.86801290512085,-4.121691703796387,0.7463212013244629
+B_after_round1,31,Amberfall Mineral Collection,fr,quartz,calcite,-2.0099315643310547,-3.7848808765411377,-1.774949312210083
+B_after_round1,31,Amberfall Mineral Collection,zh,石英,方解石,-0.804740309715271,-1.6662248373031616,-0.8614845275878906
+B_after_round1,31,Amberfall Mineral Collection,fi,kvartsi,kalsiitti,-6.4381422996521,-4.8165740966796875,1.621568202972412
+B_after_round1,32,Mooncrest Lantern Festival,en,June,December,-1.9973580837249756,-6.372358322143555,-4.375000238418579
+B_after_round1,32,Mooncrest Lantern Festival,fr,juin,décembre,-8.021629333496094,-10.396629333496094,-2.375
+B_after_round1,32,Mooncrest Lantern Festival,zh,六月,十二月,-2.2060396671295166,-1.9734721183776855,0.23256754875183105
+B_after_round1,32,Mooncrest Lantern Festival,fi,kesäkuu,joulukuu,-3.2497100830078125,-2.8496973514556885,0.400012731552124
+B_after_round1,34,Rookhaven Bridge Commission,en,steel,concrete,-3.9603359699249268,-7.585335731506348,-3.624999761581421
+B_after_round1,34,Rookhaven Bridge Commission,fr,acier,béton,-3.3710248470306396,-2.432271718978882,0.9387531280517578
+B_after_round1,34,Rookhaven Bridge Commission,zh,钢,混凝土,-1.8292131423950195,-1.9031113386154175,-0.07389819622039795
+B_after_round1,34,Rookhaven Bridge Commission,fi,teräs,betoni,-7.360780715942383,-7.180805206298828,0.1799755096435547
+B_after_round1,35,Silverfen Wildlife Census,en,elephants,rhinoceroses,-6.1064863204956055,-2.099538564682007,4.006947755813599
+B_after_round1,35,Silverfen Wildlife Census,fr,éléphants,rhinocéros,-3.316460132598877,-2.771559238433838,0.5449008941650391
+B_after_round1,35,Silverfen Wildlife Census,zh,大象,犀牛,-1.542644739151001,-1.543930172920227,-0.0012854337692260742
+B_after_round1,35,Silverfen Wildlife Census,fi,norsut,sarvikuonot,-11.291446685791016,-8.215606689453125,3.0758399963378906
+B_after_round1,37,Cloudmere Environmental Report,en,air pollution,water pollution,-2.4821479320526123,-4.454401969909668,-1.9722540378570557
+B_after_round1,37,Cloudmere Environmental Report,fr,pollution de l'air,pollution de l’eau,-1.9745334386825562,-2.749105453491211,-0.7745720148086548
+B_after_round1,37,Cloudmere Environmental Report,zh,空气污染,水污染,-0.7950853705406189,-1.2711468935012817,-0.47606152296066284
+B_after_round1,37,Cloudmere Environmental Report,fi,ilman saastuminen,vesien saastuminen,-3.411315679550171,-2.8559012413024902,0.5554144382476807
+B_after_round1,38,Pineglass Folk Costume,en,beret,turban,-5.181527614593506,-8.30683708190918,-3.125309467315674
+B_after_round1,38,Pineglass Folk Costume,fr,béret,turban,-5.529501914978027,-5.607964038848877,-0.07846212387084961
+B_after_round1,38,Pineglass Folk Costume,zh,贝雷帽,头巾,-1.511171817779541,-1.7684472799301147,-0.25727546215057373
+B_after_round1,38,Pineglass Folk Costume,fi,baskeri,turbaani,-10.649402618408203,-9.965139389038086,0.6842632293701172
+B_after_round1,39,Brookhollow Lake Survey,en,Lake Amber,Lake Silver,-0.14333683252334595,-4.643337249755859,-4.500000417232513
+B_after_round1,39,Brookhollow Lake Survey,fr,Lake Amber,Lake Silver,-0.880793035030365,-5.69329309463501,-4.812500059604645
+B_after_round1,39,Brookhollow Lake Survey,zh,Lake Amber,Lake Silver,-1.2316005229949951,-5.794100284576416,-4.562499761581421
+B_after_round1,39,Brookhollow Lake Survey,fi,Lake Amber,Lake Silver,-0.8690345883369446,-5.494034767150879,-4.625000178813934
+B_after_round1,40,Starhollow Planetary Mission,en,eastward,westward,-2.2932240962982178,-2.9185712337493896,-0.6253471374511719
+B_after_round1,40,Starhollow Planetary Mission,fr,vers l'est,vers l'ouest,-3.0245141983032227,-1.6872600317001343,1.3372541666030884
+B_after_round1,40,Starhollow Planetary Mission,zh,向东,向西,-0.9991708993911743,-1.2908375263214111,-0.2916666269302368
+B_after_round1,40,Starhollow Planetary Mission,fi,itään,länteen,-7.105313777923584,-3.3719871044158936,3.7333266735076904
+B_after_round1,41,Mistralford Dairy Cooperative,en,goats,sheep,-9.394515037536621,-8.894515037536621,0.5
+B_after_round1,41,Mistralford Dairy Cooperative,fr,chèvres,moutons,-3.0145351886749268,-3.794736385345459,-0.7802011966705322
+B_after_round1,41,Mistralford Dairy Cooperative,zh,山羊,绵羊,-2.302338123321533,-2.386734962463379,-0.0843968391418457
+B_after_round1,41,Mistralford Dairy Cooperative,fi,vuohet,lampaat,-8.17519760131836,-7.415053367614746,0.7601442337036133
+B_after_round1,42,Glassmere Optical Works,en,transparent,opaque,-9.131387710571289,-13.006387710571289,-3.875
+B_after_round1,42,Glassmere Optical Works,fr,transparent,opaque,-7.902828693389893,-11.40282917022705,-3.500000476837158
+B_after_round1,42,Glassmere Optical Works,zh,透明,不透明,-2.353591203689575,-4.03212308883667,-1.6785318851470947
+B_after_round1,42,Glassmere Optical Works,fi,läpinäkyvä,läpinäkymätön,-2.4212749004364014,-2.285604476928711,0.13567042350769043
+B_after_round1,43,Bellmont Academy,en,blue,purple,-7.98820161819458,-12.113202095031738,-4.125000476837158
+B_after_round1,43,Bellmont Academy,fr,bleu,violet,-2.1996517181396484,-5.885986328125,-3.6863346099853516
+B_after_round1,43,Bellmont Academy,zh,蓝色,紫色,-0.8229233026504517,-1.7557320594787598,-0.9328087568283081
+B_after_round1,43,Bellmont Academy,fi,sininen,violetti,-6.886618614196777,-5.533296585083008,1.3533220291137695
+B_after_round1,44,Pickleford Food Heritage Archive,en,drying,smoking,-18.294710159301758,-21.669710159301758,-3.375
+B_after_round1,44,Pickleford Food Heritage Archive,fr,séchage,fumage,-6.579913139343262,-8.45458984375,-1.8746767044067383
+B_after_round1,44,Pickleford Food Heritage Archive,zh,晒干,熏制,-4.7125396728515625,-2.8674631118774414,1.845076560974121
+B_after_round1,44,Pickleford Food Heritage Archive,fi,kuivaus,savustus,-9.600638389587402,-8.976238250732422,0.6244001388549805
+B_after_round1,45,The Westbridge Theater,en,four hundred,six hundred,-5.1863813400268555,-5.370761871337891,-0.18438053131103516
+B_after_round1,45,The Westbridge Theater,fr,quatre cents,six cents,-4.980585098266602,-4.844970226287842,0.13561487197875977
+B_after_round1,45,The Westbridge Theater,zh,四百,六百,-1.928844690322876,-1.3426549434661865,0.5861897468566895
+B_after_round1,45,The Westbridge Theater,fi,neljäsataa,kuusisataa,-5.790022373199463,-4.546386241912842,1.243636131286621
+B_after_round1,46,Sandervale River Authority,en,north,south,-4.627225875854492,-6.252225875854492,-1.625
+B_after_round1,46,Sandervale River Authority,fr,nord,sud,-10.079142570495605,-10.954142570495605,-0.875
+B_after_round1,46,Sandervale River Authority,zh,北方,南方,-1.8562887907028198,-2.0793020725250244,-0.2230132818222046
+B_after_round1,46,Sandervale River Authority,fi,pohjoinen,etelä,-2.5448834896087646,-4.026040077209473,-1.481156587600708
+B_after_round1,47,Windermark Winter Games,en,skiing,skating,-4.0123748779296875,-6.0123748779296875,-2.0
+B_after_round1,47,Windermark Winter Games,fr,ski,patinage,-2.7153232097625732,-2.5440268516540527,0.1712963581085205
+B_after_round1,47,Windermark Winter Games,zh,滑雪,滑冰,-0.9807177186012268,-1.386967658996582,-0.4062499403953552
+B_after_round1,47,Windermark Winter Games,fi,hiihto,luistelu,-2.6183855533599854,-5.463223457336426,-2.8448379039764404
+B_after_round1,49,Polarwyn Navigation Manual,en,Vega,Sirius,-0.35533618927001953,-3.6053361892700195,-3.25
+B_after_round1,49,Polarwyn Navigation Manual,fr,Vega,Sirius,-3.975513458251953,-3.725513458251953,0.25
+B_after_round1,49,Polarwyn Navigation Manual,zh,Vega,Sirius,-1.3259087800979614,-6.200908660888672,-4.8749998807907104
+B_after_round1,49,Polarwyn Navigation Manual,fi,Vega,Sirius,-8.706219673156738,-9.581219673156738,-0.875
+B_after_round1,50,Fernwick District Heating Project,en,steam,hot water,-6.352148532867432,-3.9891326427459717,2.36301589012146
+B_after_round1,50,Fernwick District Heating Project,fr,vapeur,eau chaude,-4.577444553375244,-2.7619776725769043,1.8154668807983398
+B_after_round1,50,Fernwick District Heating Project,zh,蒸汽,热水,-1.4136525392532349,-0.9933351278305054,0.4203174114227295
+B_after_round1,50,Fernwick District Heating Project,fi,höyry,kuuma vesi,-5.2300896644592285,-4.735249996185303,0.4948396682739258
