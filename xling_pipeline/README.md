@@ -69,6 +69,12 @@ Additions to the shared code that this run uses (the stand-in pipeline also work
 - First tokens that are partial UTF-8 bytes (the `Ġç` that `" 绿色"` starts with) are skipped when the answer has a cleaner alias.
 - `evaluate.failure_modes(status)` labels each `transfer_fail` row as encoding, retrieval or decoding from its layer profile.
 
+## Few-shot rerun of Sophie's alignment analysis
+
+`notebooks/4610_crosslingual_extended_fewshot.ipynb` is a copy of Sophie's `4610_crosslingual_extended.ipynb` (the original is unchanged). It reruns her post-hoc evaluation of Rohan's checkpoints A/B/C (preference scores, strict transfer, layer-wise cosine alignment and the alignment gap) with the three-example prompt from `data/convert_fictional.py`, the same prompts as the logit-lens run. No retraining. It also measures alignment at the entity's last token, in addition to the last prompt token, and it replaces the accuracy bar chart with an old-vs-new preference plot. The copy in this repo is saved with its outputs (run on an L4), so the tables and figures can be read without running it. It loads adapters from `64610/adapters/rohan` on Drive, or Sophie's extracted `4610_pilot_results`, and writes to `results/alignment_fewshot`.
+
+Its scores match `run_rohan.ipynb` with `STYLE = "fewshot"` to within bf16 rounding. Margins under about ±0.15 are effectively ties: single-token answers can round to the same logit.
+
 ## Activation patching
 
 `notebooks/run_patching.ipynb` (GPU, about 5 minutes) takes the `transfer_fail` cases from a lens run (`patch_cases.csv`). For each one, it reruns the target-language prompt at every layer with one hidden state replaced by the English run's state for the same fact. It patches two positions: the last prompt token and the entity's last token. A control patch uses a different fact's English state. `xling/patching.py` does the work and scores with the lens's `score_logprobs`, so Δ_l = D_patched,l − D_baseline is in the same units as `lens.csv`. Outputs go to `<run>/patching.csv`, `patching_per_case.csv` and `figures/patching_*.png`.
